@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b9t-j8-2uV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joanna-kosinska-129039" translatesAutoresizingMaskIntoConstraints="NO" id="9Kt-Ra-pOz">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="osG-wT-JMu">
-                                <rect key="frame" x="0.0" y="84" width="320" height="386"/>
+                                <rect key="frame" x="0.0" y="40" width="320" height="430"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Помощник в принятии решения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZm-D7-Mlu">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="31.5"/>
@@ -36,7 +36,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8b-Xn-2VP">
-                                        <rect key="frame" x="0.0" y="90" width="320" height="212.5"/>
+                                        <rect key="frame" x="0.0" y="112" width="320" height="212.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTb-3v-Fd7">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="212.5"/>
@@ -52,7 +52,7 @@
                                                         <state key="normal" title="Начать"/>
                                                         <connections>
                                                             <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wI-1c-cLq"/>
-                                                            <segue destination="n2I-gy-D2M" kind="presentation" id="AdA-gb-DZz"/>
+                                                            <segue destination="b9t-j8-2uV" kind="presentation" id="EqB-dP-cwY"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLs-oU-uCi">
@@ -84,7 +84,7 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rights/ Version number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiL-c0-mIH">
-                                        <rect key="frame" x="0.0" y="368" width="320" height="18"/>
+                                        <rect key="frame" x="0.0" y="412" width="320" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1959" y="74"/>
+            <point key="canvasLocation" x="-3238" y="124"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="c3E-2D-u6n">
@@ -465,7 +465,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogC-2J-ezE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1254" y="74"/>
+            <point key="canvasLocation" x="-1659" y="124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zKE-m8-2Zf">
@@ -476,12 +476,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9nj-Qn-CbV"/>
+                        <segue destination="n2I-gy-D2M" kind="relationship" relationship="rootViewController" id="U5C-f5-z0i"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJs-MI-SVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2646" y="74"/>
+            <point key="canvasLocation" x="-2490" y="124"/>
         </scene>
     </scenes>
     <resources>
