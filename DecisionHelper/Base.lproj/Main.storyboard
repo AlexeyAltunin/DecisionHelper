@@ -252,7 +252,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Введите критерии и их важность" id="bY3-gV-ry6">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="88" id="lgP-Wg-HHR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="5" indentationWidth="0.0" rowHeight="88" id="lgP-Wg-HHR">
                                         <rect key="frame" x="0.0" y="331.5" width="320" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lgP-Wg-HHR" id="w23-h0-w02">
@@ -260,7 +260,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OQ5-ln-1HI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                                                    <rect key="frame" x="0.0" y="-0.5" width="320" height="87.5"/>
                                                     <subviews>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Критерий 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lxV-QN-xaP">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -274,10 +274,10 @@
                                                             <rect key="frame" x="0.0" y="44" width="320" height="44.5"/>
                                                             <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <segments>
-                                                                <segment title="First"/>
-                                                                <segment title="Second"/>
-                                                                <segment title=""/>
-                                                                <segment title=""/>
+                                                                <segment title="⭐️"/>
+                                                                <segment title="⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️⭐️"/>
                                                             </segments>
                                                             <color key="tintColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </segmentedControl>
@@ -311,14 +311,14 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B85-v6-6zG">
+                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kno-GK-FOK">
                                                             <rect key="frame" x="0.0" y="44" width="320" height="44.5"/>
-                                                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <segments>
-                                                                <segment title="First"/>
-                                                                <segment title="Second"/>
-                                                                <segment title=""/>
-                                                                <segment title=""/>
+                                                                <segment title="⭐️"/>
+                                                                <segment title="⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️⭐️"/>
                                                             </segments>
                                                             <color key="tintColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </segmentedControl>
@@ -351,14 +351,14 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lGf-c5-AFD">
+                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kH4-Gq-plj">
                                                             <rect key="frame" x="0.0" y="44" width="320" height="44.5"/>
-                                                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <segments>
-                                                                <segment title="First"/>
-                                                                <segment title="Second"/>
-                                                                <segment title=""/>
-                                                                <segment title=""/>
+                                                                <segment title="⭐️"/>
+                                                                <segment title="⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️⭐️"/>
                                                             </segments>
                                                             <color key="tintColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </segmentedControl>
@@ -390,14 +390,14 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-95-8hN">
+                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="H3y-ex-P6W">
                                                             <rect key="frame" x="0.0" y="44" width="320" height="44.5"/>
-                                                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <segments>
-                                                                <segment title="First"/>
-                                                                <segment title="Second"/>
-                                                                <segment title=""/>
-                                                                <segment title=""/>
+                                                                <segment title="⭐️"/>
+                                                                <segment title="⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️⭐️"/>
                                                             </segments>
                                                             <color key="tintColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </segmentedControl>
@@ -430,14 +430,14 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TEQ-MQ-wt8">
+                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HhN-5O-Use">
                                                             <rect key="frame" x="0.0" y="44" width="320" height="44.5"/>
-                                                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <segments>
-                                                                <segment title="First"/>
-                                                                <segment title="Second"/>
-                                                                <segment title=""/>
-                                                                <segment title=""/>
+                                                                <segment title="⭐️"/>
+                                                                <segment title="⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️"/>
+                                                                <segment title="⭐️⭐️⭐️⭐️"/>
                                                             </segments>
                                                             <color key="tintColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </segmentedControl>
