@@ -15,6 +15,7 @@
 		8A8E3D73200BF5890054910D /* DecisionHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8E3D72200BF5890054910D /* DecisionHelperUITests.swift */; };
 		8AB426882013956A001B7B7D /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB426872013956A001B7B7D /* Option.swift */; };
 		8AB4268A20139AAE001B7B7D /* Decision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB4268920139AAE001B7B7D /* Decision.swift */; };
+		8AB4268C20150FBD001B7B7D /* OptionsComparisonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB4268B20150FBD001B7B7D /* OptionsComparisonTableViewController.swift */; };
 		8AD643EE200EA79D00C469F7 /* OptionsCriteriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD643ED200EA79D00C469F7 /* OptionsCriteriaTableViewController.swift */; };
 		8AE7398F20138FEE00C71473 /* Criteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE7398E20138FEE00C71473 /* Criteria.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		8A8E3D74200BF5890054910D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB426872013956A001B7B7D /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		8AB4268920139AAE001B7B7D /* Decision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decision.swift; sourceTree = "<group>"; };
+		8AB4268B20150FBD001B7B7D /* OptionsComparisonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsComparisonTableViewController.swift; sourceTree = "<group>"; };
 		8AD643ED200EA79D00C469F7 /* OptionsCriteriaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsCriteriaTableViewController.swift; sourceTree = "<group>"; };
 		8AE7398E20138FEE00C71473 /* Criteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Criteria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 		8AE7398C20138E6D00C71473 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8AB4268B20150FBD001B7B7D /* OptionsComparisonTableViewController.swift */,
 				8A8E3D54200BF5880054910D /* MainScreenViewController.swift */,
 				8AD643ED200EA79D00C469F7 /* OptionsCriteriaTableViewController.swift */,
 			);
@@ -289,6 +292,7 @@
 				8AB426882013956A001B7B7D /* Option.swift in Sources */,
 				8A8E3D53200BF5880054910D /* AppDelegate.swift in Sources */,
 				8AB4268A20139AAE001B7B7D /* Decision.swift in Sources */,
+				8AB4268C20150FBD001B7B7D /* OptionsComparisonTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

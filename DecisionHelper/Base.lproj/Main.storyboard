@@ -469,19 +469,36 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Далее" id="N5q-ep-raO">
                             <connections>
-                                <segue destination="Wf6-1h-qlh" kind="showDetail" id="3SK-sd-dBi"/>
+                                <segue destination="eiR-dk-z0I" kind="showDetail" identifier="toOprionsComparison" id="xJZ-Lb-hAG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="criteria1SegmentControl" destination="I6g-CT-t2l" id="gEQ-xw-1Dv"/>
+                        <outlet property="criteria1TextField" destination="lxV-QN-xaP" id="BPS-2A-R9k"/>
+                        <outlet property="criteria2SegmentControl" destination="kno-GK-FOK" id="YqV-EH-XfF"/>
+                        <outlet property="criteria2TextField" destination="5ab-tU-cl4" id="931-Ym-6tO"/>
+                        <outlet property="criteria3SegmentControl" destination="kH4-Gq-plj" id="N6G-Pf-Kdc"/>
+                        <outlet property="criteria3TextField" destination="PCl-mh-N48" id="E7B-1P-Ast"/>
+                        <outlet property="criteria4SegmentControl" destination="H3y-ex-P6W" id="V2A-Bg-Q76"/>
+                        <outlet property="criteria4TextField" destination="Bw9-Gs-zQf" id="Ojs-s7-tTp"/>
+                        <outlet property="criteria5SegmentControl" destination="HhN-5O-Use" id="M27-vT-w48"/>
+                        <outlet property="criteria5TextField" destination="Zdp-1A-2NJ" id="WdM-lO-H3K"/>
+                        <outlet property="option1TextField" destination="fQ5-s7-XUC" id="1yd-Cv-6W4"/>
+                        <outlet property="option2TextField" destination="Bet-5z-bAF" id="eEa-OT-3Wa"/>
+                        <outlet property="option3TextField" destination="ha1-pf-jFS" id="uil-xZ-mGH"/>
+                        <outlet property="option4TextField" destination="wqR-yl-naE" id="yti-DI-uZS"/>
+                        <outlet property="option5TextField" destination="3B1-Ye-Fjm" id="VcT-Sx-F2L"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogC-2J-ezE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2183" y="88"/>
+            <point key="canvasLocation" x="-2374" y="10"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="vaZ-88-3uP">
             <objects>
-                <tableViewController id="eiR-dk-z0I" sceneMemberID="viewController">
+                <tableViewController id="eiR-dk-z0I" customClass="OptionsComparisonTableViewController" customModule="DecisionHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bxe-8f-PD3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -497,7 +514,7 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="eiR-dk-z0I" id="dxY-t0-KDi"/>
+                            <outlet property="dataSource" destination="eiR-dk-z0I" id="BuN-Xk-1Dt"/>
                             <outlet property="delegate" destination="eiR-dk-z0I" id="hwQ-gj-3Ro"/>
                         </connections>
                     </tableView>
@@ -521,7 +538,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNv-jf-fKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1646" y="851"/>
+            <point key="canvasLocation" x="-2147" y="843"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zKE-m8-2Zf">
@@ -543,4 +560,7 @@
     <resources>
         <image name="joanna-kosinska-129039" width="6016" height="4016"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3TD-ZJ-z73"/>
+    </inferredMetricsTieBreakers>
 </document>
