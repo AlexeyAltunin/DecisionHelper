@@ -16,9 +16,10 @@ class OptionsComparisonTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.isEditing = true
+        
         print(options)
         print(criteria)
-    
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,35 +27,67 @@ class OptionsComparisonTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        guard let criteria = self.criteria else {return 0}
+        
+        return criteria.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        guard let options = self.options else {return 0}
+        
+        return options.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell", for: indexPath)
+        let placeValue = "\(indexPath.row + 1)"
 
-        // Configure the cell...
-
+        cell.textLabel?.text = self.options![indexPath.row].Title
+        
+        if placeValue == "1" {
+            cell.detailTextLabel?.text = "Лучший: место \(placeValue)"
+        } else if placeValue == "\(self.options!.count)" {
+            cell.detailTextLabel?.text = "Худший: место \(placeValue)"
+        } else {
+            cell.detailTextLabel?.text = "место \(placeValue)"
+        }
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Критерий: \(self.criteria![section].Title)"
     }
+    
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "Расставьте места, где 1 - лучшая альтернатива для критерия, \(self.options!.count) - худшая альтерантива"
+    }
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .none
+    }
+    
+     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+        let movedObject = self.options![fromIndexPath.row]
+        self.options!.remove(at: fromIndexPath.row)
+        self.options!.insert(movedObject, at: to.row)
+        self.tableView.reloadData()
+     }
+ 
+    
+    /*
+     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+     }
     */
+ 
+/*
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }*/
+ 
 
     /*
     // Override to support editing the table view.
@@ -65,21 +98,6 @@ class OptionsComparisonTableViewController: UITableViewController {
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
     }
     */
 
