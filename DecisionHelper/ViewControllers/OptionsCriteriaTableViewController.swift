@@ -80,10 +80,11 @@ class OptionsCriteriaTableViewController: UITableViewController {
                 }
             }
         }
-        
-        guard let optionsComparisonViewController = segue.destination as? OptionsComparisonTableViewController else {return}
-        
+ 
         if  segue.identifier == "toOprionsComparison" {
+            let navVC = segue.destination as! UINavigationController
+            let optionsComparisonViewController = navVC.viewControllers.first as! OptionsComparisonTableViewController
+            
             optionsComparisonViewController.options = options
             optionsComparisonViewController.criteria = criteria
         }

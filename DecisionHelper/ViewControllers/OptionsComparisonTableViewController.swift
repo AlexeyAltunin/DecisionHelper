@@ -12,14 +12,16 @@ class OptionsComparisonTableViewController: UITableViewController {
 
     var options: [Option]?
     var criteria: [Criteria]?
+    var separatedOptions = [Int: [Option]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.isEditing = true
         
-        print(options)
-        print(criteria)
+        for index in 1...self.options!.count {
+            separatedOptions[index-1] = self.options!
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,17 +40,21 @@ class OptionsComparisonTableViewController: UITableViewController {
         
         return options.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell", for: indexPath)
-        let placeValue = "\(indexPath.row + 1)"
+        let placeValue = indexPath.row + 1
 
-        cell.textLabel?.text = self.options![indexPath.row].Title
+        let cuttentTitle = self.separatedOptions[indexPath.section]![indexPath.row].Title
         
-        if placeValue == "1" {
+        cell.textLabel?.text = cuttentTitle
+        //self.options![indexPath.row].Title
+        
+        self.criteria![indexPath.section].OptionRank[cuttentTitle] = Double(self.options!.count - indexPath.row)
+        
+        if placeValue == 1 {
             cell.detailTextLabel?.text = "Лучший: место \(placeValue)"
-        } else if placeValue == "\(self.options!.count)" {
+        } else if placeValue == self.options!.count {
             cell.detailTextLabel?.text = "Худший: место \(placeValue)"
         } else {
             cell.detailTextLabel?.text = "место \(placeValue)"
@@ -70,11 +76,16 @@ class OptionsComparisonTableViewController: UITableViewController {
     }
     
      override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        let movedObject = self.options![fromIndexPath.row]
-        self.options!.remove(at: fromIndexPath.row)
-        self.options!.insert(movedObject, at: to.row)
+        let movedObject = self.separatedOptions[fromIndexPath.section]![fromIndexPath.row]
+        
+        self.separatedOptions[fromIndexPath.section]!.remove(at: fromIndexPath.row)
+        self.separatedOptions[fromIndexPath.section]!.insert(movedObject, at: to.row)
         self.tableView.reloadData()
      }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
  
     
     /*

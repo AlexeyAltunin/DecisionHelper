@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3911" y="186"/>
+            <point key="canvasLocation" x="-3574" y="10"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="c3E-2D-u6n">
@@ -469,7 +469,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Далее" id="N5q-ep-raO">
                             <connections>
-                                <segue destination="eiR-dk-z0I" kind="showDetail" identifier="toOprionsComparison" id="xJZ-Lb-hAG"/>
+                                <segue destination="Wf6-1h-qlh" kind="presentation" identifier="toOprionsComparison" id="Bka-n6-rLq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -493,7 +493,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogC-2J-ezE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2374" y="10"/>
+            <point key="canvasLocation" x="-2738" y="10"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="vaZ-88-3uP">
@@ -534,11 +534,20 @@
                             <outlet property="delegate" destination="eiR-dk-z0I" id="hwQ-gj-3Ro"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="BE5-7A-PPF"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="BE5-7A-PPF">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="oBL-4Z-7bg">
+                            <connections>
+                                <segue destination="b9t-j8-2uV" kind="presentation" id="g6W-d7-PpO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Далее" id="qcl-LI-XJH"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cro-di-Dog" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1226" y="88"/>
+            <point key="canvasLocation" x="-1804" y="10"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9sY-T0-hqr">
@@ -554,7 +563,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNv-jf-fKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2147" y="843"/>
+            <point key="canvasLocation" x="-2451" y="841"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zKE-m8-2Zf">
@@ -570,7 +579,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJs-MI-SVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3156" y="535"/>
+            <point key="canvasLocation" x="-3354" y="790"/>
         </scene>
     </scenes>
     <resources>
@@ -578,5 +587,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3TD-ZJ-z73"/>
+        <segue reference="g6W-d7-PpO"/>
     </inferredMetricsTieBreakers>
 </document>
