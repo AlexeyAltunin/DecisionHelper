@@ -118,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="-3574" y="10"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Шаг 1-->
         <scene sceneID="c3E-2D-u6n">
             <objects>
                 <tableViewController id="n2I-gy-D2M" customClass="OptionsCriteriaTableViewController" customModule="DecisionHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -461,7 +461,7 @@
                             <outlet property="delegate" destination="n2I-gy-D2M" id="2v9-uo-gtA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="I2C-rw-Gl5">
+                    <navigationItem key="navigationItem" title="Шаг 1" id="I2C-rw-Gl5">
                         <barButtonItem key="leftBarButtonItem" title="Назад" id="Ybp-im-Bpr">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="showDetail" action="showViewController:sender:" id="xz4-5G-2QC"/>
@@ -495,14 +495,17 @@
             </objects>
             <point key="canvasLocation" x="-2738" y="10"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Шаг 2-->
         <scene sceneID="vaZ-88-3uP">
             <objects>
                 <tableViewController id="eiR-dk-z0I" customClass="OptionsComparisonTableViewController" customModule="DecisionHelper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Bxe-8f-PD3">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Bxe-8f-PD3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.92550849909999999" green="0.71161534270000004" blue="0.16798409480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelCell" textLabel="bvv-nU-bgz" detailTextLabel="8fN-2J-TGU" style="IBUITableViewCellStyleValue1" id="Eib-s1-jCj">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
@@ -512,8 +515,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bvv-nU-bgz">
-                                            <rect key="frame" x="16" y="12" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -521,12 +525,15 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8fN-2J-TGU">
                                             <rect key="frame" x="261" y="12" width="44" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -535,13 +542,13 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="BE5-7A-PPF">
+                    <navigationItem key="navigationItem" title="Шаг 2" id="BE5-7A-PPF">
                         <barButtonItem key="leftBarButtonItem" title="Назад" id="oBL-4Z-7bg">
                             <connections>
                                 <segue destination="b9t-j8-2uV" kind="presentation" id="g6W-d7-PpO"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Далее" id="qcl-LI-XJH"/>
+                        <barButtonItem key="rightBarButtonItem" title="Результат" id="qcl-LI-XJH"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -586,7 +593,6 @@
         <image name="joanna-kosinska-129039" width="6016" height="4016"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3TD-ZJ-z73"/>
         <segue reference="g6W-d7-PpO"/>
     </inferredMetricsTieBreakers>
 </document>
