@@ -548,13 +548,89 @@
                                 <segue destination="b9t-j8-2uV" kind="presentation" id="g6W-d7-PpO"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Результат" id="qcl-LI-XJH"/>
+                        <barButtonItem key="rightBarButtonItem" title="Результат" id="qcl-LI-XJH">
+                            <connections>
+                                <segue destination="FbJ-oO-JQ8" kind="presentation" identifier="toResult" id="dPe-yL-bYX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cro-di-Dog" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1804" y="10"/>
+        </scene>
+        <!--Результат-->
+        <scene sceneID="gzN-HW-obG">
+            <objects>
+                <tableViewController id="ggC-4s-1fg" customClass="ResultTableViewController" customModule="DecisionHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Kyr-5Y-fCj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92550849909999999" green="0.71161534270000004" blue="0.16798409480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelCell" textLabel="LEL-sP-Xcr" detailTextLabel="RL7-XS-nGl" style="IBUITableViewCellStyleValue1" id="7ho-BR-Shc">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7ho-BR-Shc" id="btj-v2-HrK">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LEL-sP-Xcr">
+                                            <rect key="frame" x="16" y="12" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RL7-XS-nGl">
+                                            <rect key="frame" x="261" y="12" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ggC-4s-1fg" id="ppZ-c5-UGE"/>
+                            <outlet property="delegate" destination="ggC-4s-1fg" id="7ql-Ub-ONS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Результат" id="vtC-F7-84n">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="SPS-H7-evQ">
+                            <connections>
+                                <segue destination="Wf6-1h-qlh" kind="presentation" id="Xdp-vs-oLy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Завершить" id="iPR-Dn-WbT"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2kh-0q-pfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1005" y="10"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="geL-gh-c1T">
+            <objects>
+                <navigationController id="FbJ-oO-JQ8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ReI-JM-pLP">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ggC-4s-1fg" kind="relationship" relationship="rootViewController" id="7Ki-Zl-b3Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="er4-jl-rEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1448" y="978"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9sY-T0-hqr">
@@ -570,7 +646,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNv-jf-fKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2451" y="841"/>
+            <point key="canvasLocation" x="-2319" y="978"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zKE-m8-2Zf">
@@ -586,7 +662,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJs-MI-SVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3354" y="790"/>
+            <point key="canvasLocation" x="-3302" y="978"/>
         </scene>
     </scenes>
     <resources>
@@ -594,5 +670,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g6W-d7-PpO"/>
+        <segue reference="Xdp-vs-oLy"/>
     </inferredMetricsTieBreakers>
 </document>

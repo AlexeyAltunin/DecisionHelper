@@ -41,8 +41,8 @@ class MainScreenViewController: UIViewController {
             options[1].Title: 2,
             options[2].Title: 3
         ]
-        
-        let bestDecition = Decision.getBestDecision(options: options, criteria: criteria)
+        let sortedDecitions = Decision.getSortedDecisions(options: options, criteria: criteria)
+        let bestDecition = sortedDecitions[0]
         print("Лучшая альтернатива: \(bestDecition.Title) количество очков: \(bestDecition.Points)")
         
     }

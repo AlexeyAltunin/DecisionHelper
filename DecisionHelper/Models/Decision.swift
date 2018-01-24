@@ -1,5 +1,5 @@
 struct Decision {
-    static func getBestDecision( options: [Option], criteria: [Criteria]) -> Option {
+    static func getSortedDecisions( options: [Option], criteria: [Criteria]) -> [Option] {
         
         var options = options
         let criteria = Decision.normalizeCriteriaImportanceValue(criteria:criteria)
@@ -15,10 +15,10 @@ struct Decision {
         }
         
         options = options.sorted { (lhs: Option, rhs: Option) -> Bool in
-            return lhs.Points < rhs.Points
+            return lhs.Points > rhs.Points
         }
         
-        return options[options.count - 1]
+        return options
     }
     
     private static func normalizeCriteriaImportanceValue(criteria: [Criteria]) -> [Criteria] {

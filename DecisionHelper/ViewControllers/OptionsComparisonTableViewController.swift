@@ -84,7 +84,13 @@ class OptionsComparisonTableViewController: UITableViewController {
      }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if  segue.identifier == "toResult" {
+            let navVC = segue.destination as! UINavigationController
+            let resultViewController = navVC.viewControllers.first as! ResultTableViewController
+            
+            resultViewController.options = options
+            resultViewController.criteria = criteria
+        }
     }
  
     
