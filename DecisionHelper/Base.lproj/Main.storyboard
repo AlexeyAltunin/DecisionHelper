@@ -51,7 +51,6 @@
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <state key="normal" title="Начать"/>
                                                         <connections>
-                                                            <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wI-1c-cLq"/>
                                                             <segue destination="b9t-j8-2uV" kind="show" id="EqB-dP-cwY"/>
                                                         </connections>
                                                     </button>
@@ -68,6 +67,9 @@
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Купить полную версию"/>
+                                                        <connections>
+                                                            <action selector="buyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8r-0u-CMe"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -104,7 +106,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="O4l-8W-Ovd"/>
                     <connections>
-                        <outlet property="startButton" destination="t8u-wr-Vjw" id="4tP-EZ-4M8"/>
+                        <outlet property="buyButton" destination="7J4-Ns-28u" id="orh-4M-oRm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

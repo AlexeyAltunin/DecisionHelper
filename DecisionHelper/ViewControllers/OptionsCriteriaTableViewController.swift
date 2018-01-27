@@ -28,6 +28,8 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
     @IBOutlet weak var criteria5TextField: UITextField!
     @IBOutlet weak var criteria5SegmentControl: UISegmentedControl!
     
+    var isPurchased = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,6 +52,21 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
     
     var options = [Option]()
     var criteria = [Criteria]()
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if isPurchased == false {
+            if indexPath.row > 2 {
+                return 0
+            }
+        }
+        
+        if indexPath.section == 1 {
+            return 88
+        }
+        
+        return 44
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         options.removeAll()

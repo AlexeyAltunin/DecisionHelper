@@ -10,6 +10,8 @@ import UIKit
 
 class MainScreenViewController: UIViewController {
 
+    var isPurchased = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,11 +58,20 @@ class MainScreenViewController: UIViewController {
         return false
     }
     
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var buyButton: UIButton!
     
-    @IBAction func startButtonTapped(_ sender: Any) {
+    @IBAction func buyButtonTapped(_ sender: Any) {
+        buyButton.isHidden = true
+        isPurchased = true
     }
-    
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navVC = segue.destination as! UINavigationController
+        let optionsCriterianViewController = navVC.viewControllers.first as! OptionsCriteriaTableViewController
+        
+        optionsCriterianViewController.isPurchased = self.isPurchased
+    }
+ 
     @IBAction func unwindToMainScreenView(segue: UIStoryboardSegue) {
     }
 
