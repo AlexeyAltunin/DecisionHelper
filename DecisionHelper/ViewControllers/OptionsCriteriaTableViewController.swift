@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OptionsCriteriaTableViewController: UITableViewController {
+class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var option1TextField: UITextField!
@@ -30,6 +30,22 @@ class OptionsCriteriaTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        option1TextField.delegate = self
+        option2TextField.delegate = self
+        option3TextField.delegate = self
+        option4TextField.delegate = self
+        option5TextField.delegate = self
+        criteria1TextField.delegate = self
+        criteria2TextField.delegate = self
+        criteria3TextField.delegate = self
+        criteria4TextField.delegate = self
+        criteria5TextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
     var options = [Option]()
