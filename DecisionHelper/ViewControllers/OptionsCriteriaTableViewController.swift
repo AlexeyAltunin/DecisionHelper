@@ -84,12 +84,33 @@ class OptionsCriteriaTableViewController: UITableViewController {
             }
         }
  
-        if  segue.identifier == "toOprionsComparison" {
-            let navVC = segue.destination as! UINavigationController
-            let optionsComparisonViewController = navVC.viewControllers.first as! OptionsComparisonTableViewController
-            
-            optionsComparisonViewController.options = options
-            optionsComparisonViewController.criteria = criteria
+        if segue.identifier == "toOprionsComparison" {
+            if options.count >= 2 && criteria.count >= 2 {
+                let navVC = segue.destination as! UINavigationController
+                let optionsComparisonViewController = navVC.viewControllers.first as! OptionsComparisonTableViewController
+                
+                optionsComparisonViewController.options = self.options
+                optionsComparisonViewController.criteria = self.criteria
+            } else {
+                self.fieldsShouldBeSetAlert()
+            }
+        }
+    }
+    
+    @IBAction func fieldsShouldBeSetAlert() {
+        let okAction = UIAlertAction(title: "Продолжить", style: .cancel) {
+            (action) in
+            // Respond to user selection of the action.
+        }
+        
+        // Create and configure the alert controller.
+        let alert = UIAlertController(title: "Некорректные данные",
+            message: "Введите как минимум 2 альтернативы и 2 критерия",
+            preferredStyle: .alert)
+        alert.addAction(okAction)
+
+        self.present(alert, animated: true) {
+            // The alert was presented
         }
     }
     
@@ -99,6 +120,5 @@ class OptionsCriteriaTableViewController: UITableViewController {
         
         self.options = optionsComparisonViewController.options!
         self.criteria = optionsComparisonViewController.criteria!
-        
     }
 }
