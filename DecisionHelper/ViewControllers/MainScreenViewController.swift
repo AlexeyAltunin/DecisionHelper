@@ -51,6 +51,11 @@ class MainScreenViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override open var shouldAutorotate: Bool {
+        return false
+    }
+    
     @IBOutlet weak var startButton: UIButton!
     
     @IBAction func startButtonTapped(_ sender: Any) {

@@ -45,7 +45,7 @@
                                                 <rect key="frame" x="120" y="0.0" width="200" height="212.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8u-wr-Vjw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="49.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="67.5"/>
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -56,21 +56,14 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLs-oU-uCi">
-                                                        <rect key="frame" x="0.0" y="54.5" width="200" height="49.5"/>
+                                                        <rect key="frame" x="0.0" y="72.5" width="200" height="67.5"/>
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="История"/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5O-YS-Med">
-                                                        <rect key="frame" x="0.0" y="109" width="200" height="49.5"/>
-                                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Пример использования"/>
+                                                        <state key="normal" title="Как это работает"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7J4-Ns-28u">
-                                                        <rect key="frame" x="0.0" y="163.5" width="200" height="49"/>
+                                                        <rect key="frame" x="0.0" y="145" width="200" height="67.5"/>
                                                         <color key="backgroundColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,7 +76,7 @@
                                             <constraint firstItem="5Eq-Ef-TbT" firstAttribute="leading" secondItem="E8b-Xn-2VP" secondAttribute="leading" constant="120" id="9S5-35-kvH"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rights/ Version number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiL-c0-mIH">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2018 Altunin. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiL-c0-mIH">
                                         <rect key="frame" x="0.0" y="412" width="320" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
@@ -155,6 +148,7 @@
                                                 <constraint firstItem="fQ5-s7-XUC" firstAttribute="top" secondItem="wam-6I-dNp" secondAttribute="top" id="vrj-uw-Pj3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="n4M-gf-YFL">
                                         <rect key="frame" x="0.0" y="99.5" width="320" height="44"/>
@@ -178,6 +172,7 @@
                                                 <constraint firstItem="Bet-5z-bAF" firstAttribute="leading" secondItem="rZV-6v-CLa" secondAttribute="leading" id="mkC-S1-j9G"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="dsG-NC-HeL">
                                         <rect key="frame" x="0.0" y="143.5" width="320" height="44"/>
@@ -201,6 +196,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="ha1-pf-jFS" secondAttribute="trailing" id="wro-VX-aml"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="bwl-BG-8Qy">
                                         <rect key="frame" x="0.0" y="187.5" width="320" height="44"/>
@@ -224,6 +220,7 @@
                                                 <constraint firstItem="wqR-yl-naE" firstAttribute="leading" secondItem="ROv-bX-5fZ" secondAttribute="leading" id="neI-aJ-WmG"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="w6n-2K-jrU">
                                         <rect key="frame" x="0.0" y="231.5" width="320" height="44"/>
@@ -247,6 +244,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="3B1-Ye-Fjm" secondAttribute="trailing" id="x16-wl-XFf"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -292,6 +290,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="OQ5-ln-1HI" secondAttribute="bottom" id="z2q-Rc-nmg"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="88" id="V8H-yj-w6g">
                                         <rect key="frame" x="0.0" y="419.5" width="320" height="88"/>
@@ -333,6 +332,7 @@
                                                 <constraint firstItem="cbx-K5-Kgt" firstAttribute="top" secondItem="b3I-sK-4Vn" secondAttribute="top" id="kPR-iY-hTR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="88" id="wc1-tS-rR9">
                                         <rect key="frame" x="0.0" y="507.5" width="320" height="88"/>
@@ -372,6 +372,7 @@
                                                 <constraint firstItem="w8O-ln-v2i" firstAttribute="leading" secondItem="uvB-bE-fR8" secondAttribute="leading" id="rlh-eA-Xhr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="88" id="Blh-fE-jol">
                                         <rect key="frame" x="0.0" y="595.5" width="320" height="88"/>
@@ -411,6 +412,7 @@
                                                 <constraint firstItem="ll5-kq-ZF0" firstAttribute="leading" secondItem="C0k-UZ-MGP" secondAttribute="leading" id="czE-yk-qb3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="88" id="zho-Zl-EDT">
                                         <rect key="frame" x="0.0" y="683.5" width="320" height="88"/>
@@ -452,6 +454,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="el6-o1-Ntq" secondAttribute="trailing" id="w72-mi-0ee"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
