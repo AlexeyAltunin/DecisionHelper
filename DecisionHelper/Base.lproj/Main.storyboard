@@ -545,7 +545,7 @@
                     <navigationItem key="navigationItem" title="Шаг 2" id="BE5-7A-PPF">
                         <barButtonItem key="leftBarButtonItem" title="Назад" id="oBL-4Z-7bg">
                             <connections>
-                                <segue destination="b9t-j8-2uV" kind="presentation" id="g6W-d7-PpO"/>
+                                <segue destination="F8Y-tv-let" kind="unwind" identifier="backUnwind" unwindAction="unwindToOptionsCriteriaTableViewWithSegue:" id="nTm-A1-flY"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Результат" id="qcl-LI-XJH">
@@ -557,6 +557,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cro-di-Dog" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="F8Y-tv-let" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1804" y="10"/>
         </scene>
@@ -606,13 +607,18 @@
                     <navigationItem key="navigationItem" title="Результат" id="vtC-F7-84n">
                         <barButtonItem key="leftBarButtonItem" title="Назад" id="SPS-H7-evQ">
                             <connections>
-                                <segue destination="Wf6-1h-qlh" kind="presentation" id="Xdp-vs-oLy"/>
+                                <segue destination="Ngo-HM-9fk" kind="unwind" identifier="backUnwind" unwindAction="unwindToOptionsComparisonTableViewWithSegue:" id="nPR-QR-rEN"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Завершить" id="iPR-Dn-WbT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Завершить" id="iPR-Dn-WbT">
+                            <connections>
+                                <segue destination="Ngo-HM-9fk" kind="unwind" unwindAction="unwindToMainScreenViewWithSegue:" id="qsX-Ib-SaQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kh-0q-pfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ngo-HM-9fk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1005" y="10"/>
         </scene>
@@ -668,8 +674,4 @@
     <resources>
         <image name="joanna-kosinska-129039" width="6016" height="4016"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="g6W-d7-PpO"/>
-        <segue reference="Xdp-vs-oLy"/>
-    </inferredMetricsTieBreakers>
 </document>

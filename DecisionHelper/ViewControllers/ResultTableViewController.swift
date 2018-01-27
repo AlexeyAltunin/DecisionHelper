@@ -37,14 +37,12 @@ class ResultTableViewController: UITableViewController {
         
         return options.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell", for: indexPath)
 
-        if indexPath.row == 0 {
-            cell.textLabel?.backgroundColor = UIColor.red
-            cell.detailTextLabel?.backgroundColor = UIColor.red
+        if self.options![indexPath.row].Points == self.options![0].Points {
+            cell.contentView.backgroundColor = UIColor.lightText
         }
         
         cell.textLabel?.text = self.options![indexPath.row].Title
@@ -55,6 +53,16 @@ class ResultTableViewController: UITableViewController {
  
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Лучшая альтернатива"
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        var criteriaLine = "Критерии: "
+        
+        self.criteria!.forEach { critery in
+            criteriaLine += "\(critery.Title), "
+        }
+        
+        return criteriaLine.trimmingCharacters(in: .whitespaces).trimmingCharacters(in: .punctuationCharacters)
     }
     
     /*

@@ -5,6 +5,8 @@ struct Decision {
         let criteria = Decision.normalizeCriteriaImportanceValue(criteria:criteria)
         
         for index in 0..<options.count {
+            options[index].Points = 0
+            
             for critery in criteria {
                 options[index].Points += critery.Importance * critery.OptionRank[options[index].Title]!
                

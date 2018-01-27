@@ -19,7 +19,7 @@ class OptionsComparisonTableViewController: UITableViewController {
         
         self.tableView.isEditing = true
         
-        for index in 1...self.options!.count {
+        for index in 1...self.criteria!.count {
             separatedOptions[index-1] = self.options!
         }
     }
@@ -92,7 +92,15 @@ class OptionsComparisonTableViewController: UITableViewController {
             resultViewController.criteria = criteria
         }
     }
- 
+    
+    @IBAction func unwindToOptionsComparisonTableView(segue: UIStoryboardSegue) {
+        guard segue.identifier == "backUnwind" else { return }
+        let resultComparisonViewController = segue.source as! ResultTableViewController
+        
+        self.options = resultComparisonViewController.options!
+        self.criteria = resultComparisonViewController.criteria!
+        
+    }
     
     /*
      override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {

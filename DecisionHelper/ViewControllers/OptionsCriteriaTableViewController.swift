@@ -36,6 +36,9 @@ class OptionsCriteriaTableViewController: UITableViewController {
     var criteria = [Criteria]()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        options.removeAll()
+        criteria.removeAll()
+        
         let optionTitles = [
             option1TextField.text,
             option2TextField.text,
@@ -88,5 +91,14 @@ class OptionsCriteriaTableViewController: UITableViewController {
             optionsComparisonViewController.options = options
             optionsComparisonViewController.criteria = criteria
         }
+    }
+    
+    @IBAction func unwindToOptionsCriteriaTableView(segue: UIStoryboardSegue) {
+        guard segue.identifier == "backUnwind" else { return }
+        let optionsComparisonViewController = segue.source as! OptionsComparisonTableViewController
+        
+        self.options = optionsComparisonViewController.options!
+        self.criteria = optionsComparisonViewController.criteria!
+        
     }
 }
