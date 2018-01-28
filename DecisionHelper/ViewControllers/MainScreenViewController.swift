@@ -102,10 +102,12 @@ class MainScreenViewController: UIViewController {
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let navVC = segue.destination as! UINavigationController
-        let optionsCriterianViewController = navVC.viewControllers.first as! OptionsCriteriaTableViewController
-        
-        optionsCriterianViewController.isPurchased = self.isPurchased
+        if segue.identifier == "startSegue" {
+            let navVC = segue.destination as! UINavigationController
+            let optionsCriterianViewController = navVC.viewControllers.first as! OptionsCriteriaTableViewController
+            
+            optionsCriterianViewController.isPurchased = self.isPurchased
+        }
     }
  
     @IBAction func unwindToMainScreenView(segue: UIStoryboardSegue) {
