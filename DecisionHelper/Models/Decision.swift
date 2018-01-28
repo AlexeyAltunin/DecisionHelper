@@ -1,5 +1,5 @@
 struct Decision {
-    static func getSortedDecisions( options: [Option], criteria: [Criteria]) -> [Option] {
+    static func getSortedDecisions(options: [Option], criteria: [Criteria]) -> [Option] {
         
         var options = options
         let criteria = Decision.normalizeCriteriaImportanceValue(criteria:criteria)

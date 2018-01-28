@@ -99,7 +99,6 @@ class OptionsComparisonTableViewController: UITableViewController {
         
         self.options = resultComparisonViewController.options!
         self.criteria = resultComparisonViewController.criteria!
-        
     }
     
     /*
