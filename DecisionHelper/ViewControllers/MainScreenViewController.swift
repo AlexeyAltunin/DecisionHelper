@@ -14,7 +14,11 @@ class MainScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        versionLabel.text = "Версия: Lite 1.0.0"
+    /*    versionDescriptionLabel.text = "Lite версия позволяет ввести максимус 3 критерия и 3 альтернативы, что является достаточным количеством для большенства повседневных задач.\n"
+        versionDescriptionLabel.text?.append("Если вы хотите увеличть число критериев и альтернатив до 5 или вам просто нравится идея приложения и вы хотите поддержать разработчика, то купите полную версию")
+*/
         var options = [
             Option(title: "Альтернатива 1"),
             Option(title: "Альтернатива 2"),
@@ -59,10 +63,42 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var versionLabel: UILabel!
+    @IBOutlet weak var infoButton: UIButton!
+    
+    @IBAction func infoButtonTapped(_ sender: Any) {
+        paidVersionAlert()
+    }
     
     @IBAction func buyButtonTapped(_ sender: Any) {
-        buyButton.isHidden = true
         isPurchased = true
+        
+        buyButton.isHidden = isPurchased
+        
+        if isPurchased {
+            versionLabel.text = "Версия: 1.0.0"
+        }
+        
+        infoButton.isHidden = isPurchased
+    }
+    
+    @IBAction func paidVersionAlert() {
+        let okAction = UIAlertAction(title: "Продолжить", style: .cancel) {
+            (action) in
+            // Respond to user selection of the action.
+        }
+        
+        // Create and configure the alert controller.
+        let alert = UIAlertController(
+            title: "",
+            message: "Lite версия позволяет ввести максимум 3 критерия и 3 альтернативы, что является достаточным количеством для большинства повседневных задач.\n\nЕсли вы хотите увеличить число критериев и альтернатив до 5 или вам просто нравится идея приложения и вы хотите поддержать разработчика, то купите полную версию.\nВсе последующие обновления будут выходить для полной версии.",
+            preferredStyle: .alert
+        )
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true) {
+            // The alert was presented
+        }
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
