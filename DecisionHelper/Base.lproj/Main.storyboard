@@ -22,54 +22,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIA-2e-2dX">
-                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQ3-45-WSn">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Описание программы" id="0bt-q9-OWb">
+                                        <barButtonItem key="leftBarButtonItem" title="Назад" id="z4W-ek-X40">
+                                            <connections>
+                                                <segue destination="MvS-QZ-3ST" kind="unwind" unwindAction="unwindToMainScreenViewWithSegue:" id="JLH-aH-gkQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jRI-Zc-Fzz">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PPr-Z7-TZh">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ssp-of-kKy">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="8543887"/>
                                         <subviews>
-                                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQ3-45-WSn">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                                <items>
-                                                    <navigationItem title="Описание программы" id="0bt-q9-OWb">
-                                                        <barButtonItem key="leftBarButtonItem" title="Назад" id="z4W-ek-X40">
-                                                            <connections>
-                                                                <segue destination="MvS-QZ-3ST" kind="unwind" unwindAction="unwindToMainScreenViewWithSegue:" id="JLH-aH-gkQ"/>
-                                                            </connections>
-                                                        </barButtonItem>
-                                                    </navigationItem>
-                                                </items>
-                                            </navigationBar>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WkW-T8-3od">
-                                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YF-Vr-YVK">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="71300.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Label ">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Label Label Label Label Label  Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label LLabel Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label LabelLabel Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Labell</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Step1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4jS-Pv-tqS">
+                                                <rect key="frame" x="0.0" y="71300.5" width="320" height="8472586.5"/>
+                                            </imageView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="WkW-T8-3od" secondAttribute="bottom" id="Jn9-F9-CXK"/>
-                                            <constraint firstAttribute="height" constant="504" id="fBR-XZ-j4Q"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="PPr-Z7-TZh" firstAttribute="top" secondItem="QIA-2e-2dX" secondAttribute="top" id="1iw-jf-lcl"/>
-                                    <constraint firstItem="PPr-Z7-TZh" firstAttribute="leading" secondItem="QIA-2e-2dX" secondAttribute="leading" id="Fcf-rT-rPa"/>
-                                    <constraint firstAttribute="bottom" secondItem="PPr-Z7-TZh" secondAttribute="bottom" id="Pg4-vf-5Om"/>
-                                    <constraint firstAttribute="trailing" secondItem="PPr-Z7-TZh" secondAttribute="trailing" id="wld-WP-S4h"/>
+                                    <constraint firstItem="ssp-of-kKy" firstAttribute="top" secondItem="jRI-Zc-Fzz" secondAttribute="top" id="BgE-V1-OdL"/>
+                                    <constraint firstAttribute="bottom" secondItem="ssp-of-kKy" secondAttribute="bottom" id="ho0-hx-xcH"/>
+                                    <constraint firstItem="ssp-of-kKy" firstAttribute="leading" secondItem="jRI-Zc-Fzz" secondAttribute="leading" id="qS0-ij-28c"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.92550849909999999" green="0.71161534270000004" blue="0.16798409480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="QIA-2e-2dX" firstAttribute="top" secondItem="JTK-zn-x9q" secondAttribute="top" id="C8F-Hi-AHx"/>
-                            <constraint firstItem="eQ3-45-WSn" firstAttribute="width" secondItem="pJM-a2-Oqg" secondAttribute="width" id="WMo-7H-pe9"/>
-                            <constraint firstItem="QIA-2e-2dX" firstAttribute="leading" secondItem="JTK-zn-x9q" secondAttribute="leading" id="Z3d-QO-K8x"/>
-                            <constraint firstItem="JTK-zn-x9q" firstAttribute="trailing" secondItem="QIA-2e-2dX" secondAttribute="trailing" id="oXQ-FP-Edc"/>
-                            <constraint firstItem="WkW-T8-3od" firstAttribute="width" secondItem="pJM-a2-Oqg" secondAttribute="width" id="ugH-Zg-cDX"/>
-                            <constraint firstItem="JTK-zn-x9q" firstAttribute="bottom" secondItem="QIA-2e-2dX" secondAttribute="bottom" id="wds-Mn-6WY"/>
+                            <constraint firstItem="eQ3-45-WSn" firstAttribute="leading" secondItem="JTK-zn-x9q" secondAttribute="leading" id="2Qx-Hk-TAx"/>
+                            <constraint firstItem="eQ3-45-WSn" firstAttribute="trailing" secondItem="JTK-zn-x9q" secondAttribute="trailing" id="2rG-lI-hXr"/>
+                            <constraint firstItem="jRI-Zc-Fzz" firstAttribute="leading" secondItem="JTK-zn-x9q" secondAttribute="leading" id="LDq-FA-i4c"/>
+                            <constraint firstItem="3YF-Vr-YVK" firstAttribute="width" secondItem="pJM-a2-Oqg" secondAttribute="width" id="PdW-Pv-MvI"/>
+                            <constraint firstItem="eQ3-45-WSn" firstAttribute="top" secondItem="pJM-a2-Oqg" secondAttribute="top" constant="20" id="RDn-vH-iya"/>
+                            <constraint firstItem="4jS-Pv-tqS" firstAttribute="width" secondItem="pJM-a2-Oqg" secondAttribute="width" id="WpU-qD-3LS"/>
+                            <constraint firstItem="JTK-zn-x9q" firstAttribute="bottom" secondItem="jRI-Zc-Fzz" secondAttribute="bottom" id="ZPs-nO-Gwf"/>
+                            <constraint firstItem="JTK-zn-x9q" firstAttribute="trailing" secondItem="jRI-Zc-Fzz" secondAttribute="trailing" id="lcG-D6-kFq"/>
+                            <constraint firstItem="jRI-Zc-Fzz" firstAttribute="top" secondItem="eQ3-45-WSn" secondAttribute="bottom" id="myD-Hq-jjg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JTK-zn-x9q"/>
                     </view>
@@ -773,6 +784,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Step1" width="1125" height="2436"/>
         <image name="joanna-kosinska-129039" width="6016" height="4016"/>
     </resources>
 </document>
