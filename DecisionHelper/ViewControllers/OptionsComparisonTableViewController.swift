@@ -53,11 +53,11 @@ class OptionsComparisonTableViewController: UITableViewController {
         self.criteria![indexPath.section].OptionRank[cuttentTitle] = Double(self.options!.count - indexPath.row)
         
         if placeValue == 1 {
-            cell.detailTextLabel?.text = "Лучший: место \(placeValue)"
+            cell.detailTextLabel?.text = "🔝 Место \(placeValue)"
         } else if placeValue == self.options!.count {
-            cell.detailTextLabel?.text = "Худший: место \(placeValue)"
+            cell.detailTextLabel?.text = "Место \(placeValue)"
         } else {
-            cell.detailTextLabel?.text = "место \(placeValue)"
+            cell.detailTextLabel?.text = "Место \(placeValue)"
         }
         
         return cell
