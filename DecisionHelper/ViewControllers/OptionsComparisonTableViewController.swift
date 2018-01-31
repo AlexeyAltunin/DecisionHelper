@@ -13,6 +13,7 @@ class OptionsComparisonTableViewController: UITableViewController {
     var options: [Option]?
     var criteria: [Criteria]?
     var separatedOptions = [Int: [Option]]()
+    var isDemoMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,15 @@ class OptionsComparisonTableViewController: UITableViewController {
         
         for index in 1...self.criteria!.count {
             separatedOptions[index-1] = self.options!
+        }
+        
+        if isDemoMode == true {
+            let save = separatedOptions[2]![0]
+            separatedOptions[2]![0] = separatedOptions[0]![1]
+            separatedOptions[2]![1] = save
+            self.tableView.isEditing = !isDemoMode
+            
+            self.step2Alert()
         }
     }
 
@@ -48,7 +58,6 @@ class OptionsComparisonTableViewController: UITableViewController {
         let cuttentTitle = self.separatedOptions[indexPath.section]![indexPath.row].Title
         
         cell.textLabel?.text = cuttentTitle
-        //self.options![indexPath.row].Title
         
         self.criteria![indexPath.section].OptionRank[cuttentTitle] = Double(self.options!.count - indexPath.row)
         
@@ -68,7 +77,7 @@ class OptionsComparisonTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return "Расставьте места, где 1 - лучшая альтернатива для критерия, \(self.options!.count) - худшая альтерантива"
+        return "Расставьте места, где 1 - лучшая альтернатива для критерия, \(self.options!.count) - худшая альтернатива"
     }
     
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
@@ -90,6 +99,7 @@ class OptionsComparisonTableViewController: UITableViewController {
             
             resultViewController.options = options
             resultViewController.criteria = criteria
+            resultViewController.isDemoMode = isDemoMode
         }
     }
     
@@ -99,6 +109,23 @@ class OptionsComparisonTableViewController: UITableViewController {
         
         self.options = resultComparisonViewController.options!
         self.criteria = resultComparisonViewController.criteria!
+    }
+    
+    @IBAction func step2Alert() {
+        let okAction = UIAlertAction(title: "Продолжить", style: .cancel) {
+            (action) in
+            // Respond to user selection of the action.
+        }
+        
+        // Create and configure the alert controller.
+        let alert = UIAlertController(title: "Шаг 2",
+                                      message: "Описание",
+                                      preferredStyle: .alert)
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true) {
+            // The alert was presented
+        }
     }
     
     /*

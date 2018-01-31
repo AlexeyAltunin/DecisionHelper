@@ -16,9 +16,7 @@ class MainScreenViewController: UIViewController {
         super.viewDidLoad()
         
         versionLabel.text = "Версия: Lite 1.0.0"
-    /*    versionDescriptionLabel.text = "Lite версия позволяет ввести максимус 3 критерия и 3 альтернативы, что является достаточным количеством для большенства повседневных задач.\n"
-        versionDescriptionLabel.text?.append("Если вы хотите увеличть число критериев и альтернатив до 5 или вам просто нравится идея приложения и вы хотите поддержать разработчика, то купите полную версию")
-*/
+        
         var options = [
             Option(title: "Альтернатива 1"),
             Option(title: "Альтернатива 2"),
@@ -102,11 +100,14 @@ class MainScreenViewController: UIViewController {
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "startSegue" {
-            let navVC = segue.destination as! UINavigationController
-            let optionsCriterianViewController = navVC.viewControllers.first as! OptionsCriteriaTableViewController
-            
-            optionsCriterianViewController.isPurchased = self.isPurchased
+
+        let navVC = segue.destination as! UINavigationController
+        let optionsCriterianViewController = navVC.viewControllers.first as! OptionsCriteriaTableViewController
+        
+        optionsCriterianViewController.isPurchased = self.isPurchased
+        
+        if segue.identifier == "howItWorksSegue" {
+            optionsCriterianViewController.isDemoMode = true
         }
     }
  

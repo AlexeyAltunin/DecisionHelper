@@ -12,6 +12,7 @@ class ResultTableViewController: UITableViewController {
 
     var options: [Option]?
     var criteria: [Criteria]?
+    var isDemoMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,10 @@ class ResultTableViewController: UITableViewController {
         self.options = Decision.getSortedDecisions(options: self.options!, criteria: self.criteria!)
         let bestDecition = self.options![0]
         print("Лучшая альтернатива: \(bestDecition.Title) количество очков: \(bestDecition.Points)")
+        
+        if isDemoMode == true {
+            self.step3Alert()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,6 +68,23 @@ class ResultTableViewController: UITableViewController {
         }
         
         return criteriaLine.trimmingCharacters(in: .whitespaces).trimmingCharacters(in: .punctuationCharacters)
+    }
+    
+    @IBAction func step3Alert() {
+        let okAction = UIAlertAction(title: "Продолжить", style: .cancel) {
+            (action) in
+            // Respond to user selection of the action.
+        }
+        
+        // Create and configure the alert controller.
+        let alert = UIAlertController(title: "Шаг 3",
+                                      message: "Описание",
+                                      preferredStyle: .alert)
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true) {
+            // The alert was presented
+        }
     }
     
     /*
