@@ -54,11 +54,26 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
             criteria3TextField.text = "Стоимость билетов"
             criteria3SegmentControl.selectedSegmentIndex = 1
             
-            self.tableView.isUserInteractionEnabled = !isDemoMode
+            option1TextField.isUserInteractionEnabled = !isDemoMode
+            option2TextField.isUserInteractionEnabled = !isDemoMode
+            option3TextField.isUserInteractionEnabled = !isDemoMode
+            option4TextField.isUserInteractionEnabled = !isDemoMode
+            option5TextField.isUserInteractionEnabled = !isDemoMode
+            criteria1TextField.isUserInteractionEnabled = !isDemoMode
+            criteria2TextField.isUserInteractionEnabled = !isDemoMode
+            criteria3TextField.isUserInteractionEnabled = !isDemoMode
+            criteria4TextField.isUserInteractionEnabled = !isDemoMode
+            criteria5TextField.isUserInteractionEnabled = !isDemoMode
+            criteria1SegmentControl.isUserInteractionEnabled = !isDemoMode
+            criteria2SegmentControl.isUserInteractionEnabled = !isDemoMode
+            criteria3SegmentControl.isUserInteractionEnabled = !isDemoMode
+            criteria4SegmentControl.isUserInteractionEnabled = !isDemoMode
+            criteria5SegmentControl.isUserInteractionEnabled = !isDemoMode
             
             self.demoDescriptionAlert()
         }
         
+        registerForKeyboardNotifications()
     }
     
     func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
@@ -265,5 +280,35 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
         
         self.options = optionsComparisonViewController.options!
         self.criteria = optionsComparisonViewController.criteria!
+    }
+    
+    func registerForKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector:
+            #selector(keyboardWasShown(_:)),
+                                               name: .UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector:
+            #selector(keyboardWillBeHidden(_:)),
+                                               name: .UIKeyboardWillHide, object: nil)
+        
+    }
+   
+    @objc func keyboardWasShown(_ notificiation: NSNotification) {
+        guard let info = notificiation.userInfo,
+            let keyboardFrameValue =
+            info[UIKeyboardFrameBeginUserInfoKey] as? NSValue
+            else { return }
+                let keyboardFrame = keyboardFrameValue.cgRectValue
+        let keyboardSize = keyboardFrame.size
+        
+        let contentInsets = UIEdgeInsetsMake(0.0, 0.0,
+                                             keyboardSize.height, 0.0)
+        self.tableView.contentInset = contentInsets
+        self.tableView.scrollIndicatorInsets = contentInsets
+    }
+    
+    @objc func keyboardWillBeHidden(_ notification: NSNotification) {
+        let contentInsets = UIEdgeInsets.zero
+        self.tableView.contentInset = contentInsets
+        self.tableView.scrollIndicatorInsets = contentInsets
     }
 }

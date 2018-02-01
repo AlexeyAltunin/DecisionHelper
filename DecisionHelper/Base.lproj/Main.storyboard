@@ -38,10 +38,10 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ssp-of-kKy">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="217309.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="4063.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YF-Vr-YVK">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="71300.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="218.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label ">
                                                         <attributes>
@@ -58,10 +58,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step 1 short" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4jS-Pv-tqS">
-                                                <rect key="frame" x="0.0" y="71300.5" width="320" height="1136"/>
+                                                <rect key="frame" x="0.0" y="218.5" width="320" height="1136"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzB-W4-Nfe">
-                                                <rect key="frame" x="0.0" y="72436.5" width="320" height="71300.5"/>
+                                                <rect key="frame" x="0.0" y="1354.5" width="320" height="218.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label ">
                                                         <attributes>
@@ -78,10 +78,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step 2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvh-0o-pp2">
-                                                <rect key="frame" x="0.0" y="143737" width="320" height="1136"/>
+                                                <rect key="frame" x="0.0" y="1573" width="320" height="1136"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtg-Vb-oXz">
-                                                <rect key="frame" x="0.0" y="144873" width="320" height="71300.5"/>
+                                                <rect key="frame" x="0.0" y="2709" width="320" height="218.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label ">
                                                         <attributes>
@@ -98,7 +98,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step 3 shortest" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vK2-uT-Iej">
-                                                <rect key="frame" x="0.0" y="216173.5" width="320" height="1136"/>
+                                                <rect key="frame" x="0.0" y="2927.5" width="320" height="1136"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
