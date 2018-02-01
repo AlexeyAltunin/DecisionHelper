@@ -45,35 +45,37 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
         criteria5TextField.delegate = self
         
         if isDemoMode == true {
-            option1TextField.text = "Германия"
-            option2TextField.text = "Швейцария"
-            criteria1TextField.text = "Природа"
-            criteria1SegmentControl.selectedSegmentIndex = 2
-            criteria2TextField.text = "Стоимость проживания"
-            criteria2SegmentControl.selectedSegmentIndex = 3
-            criteria3TextField.text = "Стоимость билетов"
-            criteria3SegmentControl.selectedSegmentIndex = 1
-            
-            option1TextField.isUserInteractionEnabled = !isDemoMode
-            option2TextField.isUserInteractionEnabled = !isDemoMode
-            option3TextField.isUserInteractionEnabled = !isDemoMode
-            option4TextField.isUserInteractionEnabled = !isDemoMode
-            option5TextField.isUserInteractionEnabled = !isDemoMode
-            criteria1TextField.isUserInteractionEnabled = !isDemoMode
-            criteria2TextField.isUserInteractionEnabled = !isDemoMode
-            criteria3TextField.isUserInteractionEnabled = !isDemoMode
-            criteria4TextField.isUserInteractionEnabled = !isDemoMode
-            criteria5TextField.isUserInteractionEnabled = !isDemoMode
-            criteria1SegmentControl.isUserInteractionEnabled = !isDemoMode
-            criteria2SegmentControl.isUserInteractionEnabled = !isDemoMode
-            criteria3SegmentControl.isUserInteractionEnabled = !isDemoMode
-            criteria4SegmentControl.isUserInteractionEnabled = !isDemoMode
-            criteria5SegmentControl.isUserInteractionEnabled = !isDemoMode
-            
             self.demoDescriptionAlert()
         }
         
         registerForKeyboardNotifications()
+    }
+    
+    func setExampleData() {
+        option1TextField.text = "Германия"
+        option2TextField.text = "Швейцария"
+        criteria1TextField.text = "Природа"
+        criteria1SegmentControl.selectedSegmentIndex = 2
+        criteria2TextField.text = "Стоимость проживания"
+        criteria2SegmentControl.selectedSegmentIndex = 3
+        criteria3TextField.text = "Стоимость билетов"
+        criteria3SegmentControl.selectedSegmentIndex = 1
+        
+        option1TextField.isUserInteractionEnabled = !isDemoMode
+        option2TextField.isUserInteractionEnabled = !isDemoMode
+        option3TextField.isUserInteractionEnabled = !isDemoMode
+        option4TextField.isUserInteractionEnabled = !isDemoMode
+        option5TextField.isUserInteractionEnabled = !isDemoMode
+        criteria1TextField.isUserInteractionEnabled = !isDemoMode
+        criteria2TextField.isUserInteractionEnabled = !isDemoMode
+        criteria3TextField.isUserInteractionEnabled = !isDemoMode
+        criteria4TextField.isUserInteractionEnabled = !isDemoMode
+        criteria5TextField.isUserInteractionEnabled = !isDemoMode
+        criteria1SegmentControl.isUserInteractionEnabled = !isDemoMode
+        criteria2SegmentControl.isUserInteractionEnabled = !isDemoMode
+        criteria3SegmentControl.isUserInteractionEnabled = !isDemoMode
+        criteria4SegmentControl.isUserInteractionEnabled = !isDemoMode
+        criteria5SegmentControl.isUserInteractionEnabled = !isDemoMode
     }
     
     func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
@@ -210,9 +212,15 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
     }
     
     @IBAction func demoDescriptionAlert() {
-        let okAction = UIAlertAction(title: "Продолжить", style: .cancel) {
+        let exampleAction = UIAlertAction(title: "Запустить пример", style: .default) {
             (action) in
+            self.setExampleData()
             self.exampleAlert()
+        }
+        
+        let startAction = UIAlertAction(title: "Начать использование", style: .cancel) {
+            (action) in
+            self.isDemoMode = false
         }
         
         let myString  = "Пример использования"
@@ -233,7 +241,8 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
         alert.setValue(myMutableString, forKey: "attributedTitle")
         alert.setValue(messageMutableString, forKey: "attributedMessage")
         
-        alert.addAction(okAction)
+        alert.addAction(exampleAction)
+        alert.addAction(startAction)
         
         self.present(alert, animated: false) {
             // The alert was presented
