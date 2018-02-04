@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "OptionsComparisonTableViewController.numberOfSections(in:):OptionsComparisonTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "options.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OptionsComparisonTableViewController.prepare(for:sender:):OptionsComparisonTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "OptionsComparisonTableViewController.tableView(_:cellForRowAt:):OptionsComparisonTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+            <PersistentString
+               value = "self.separatedOptions">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OptionsCriteriaTableViewController.prepare(for:sender:):OptionsCriteriaTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "options">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OptionsComparisonTableViewController.viewDidLoad():OptionsComparisonTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "separatedOptions[0][0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OptionsComparisonTableViewController.tableView(_:titleForHeaderInSection:):OptionsComparisonTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "criteria">
+            </PersistentString>
+            <PersistentString
+               value = "self.criteria![section].Title">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OptionsComparisonTableViewController.tableView(_:canEditRowAt:):OptionsComparisonTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "self.options![indexPath.row].Title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OptionsComparisonTableViewController.tableView(_:moveRowAt:to:):OptionsComparisonTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.separatedOptions[fromIndexPath.section]!">
+            </PersistentString>
+            <PersistentString
+               value = "fromIndexPath.section">
+            </PersistentString>
+            <PersistentString
+               value = "fromIndexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
