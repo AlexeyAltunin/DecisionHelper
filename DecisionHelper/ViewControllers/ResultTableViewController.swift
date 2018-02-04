@@ -76,10 +76,18 @@ class ResultTableViewController: UITableViewController {
             // Respond to user selection of the action.
         }
         
-        // Create and configure the alert controller.
-        let alert = UIAlertController(title: "Шаг 3",
-                                      message: "Описание",
-                                      preferredStyle: .alert)
+        let title = "Результат"
+        let message = "На основании введенных данных алгоритм вычисляет итоговое количество очков. Альтернатива с наибольшим количеством очков является лучшей. В данном случаи разница между Германией и Швейцарией несильно большая, однако именно для вас лучше будет поехать в Германию. В этом и заключается особенность метода: вычисления были сделаны в соответсвии с вашими потребностями, условиями задачи и основываясь на вашем мнении."
+        
+        let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
+        
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .actionSheet)
+        
+        alert.setValue(mutableData["myMutableTitle"], forKey: "attributedTitle")
+        alert.setValue(mutableData["myMutableMessage"], forKey: "attributedMessage")
+        
         alert.addAction(okAction)
         
         self.present(alert, animated: true) {

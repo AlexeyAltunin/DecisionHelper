@@ -117,10 +117,18 @@ class OptionsComparisonTableViewController: UITableViewController {
             // Respond to user selection of the action.
         }
         
-        // Create and configure the alert controller.
-        let alert = UIAlertController(title: "Шаг 2",
-                                      message: "Описание",
-                                      preferredStyle: .alert)
+        let title = "Шаг 2"
+        let message = "Перед финальным подсчетом необходимо расставить места для альтернатив по каждому критерию, основываюсь на нашем субъективном мнении и знании. Например, мы считаем, что природа лучше в Швейцарии и передвигаем ее на 1-ое место, Германия опустится на 2-ое место. Однако, по стоимости проживания Германия займет 1-ое место, так как жить там значительно дешевле.\nЧем выше место страны, тем больше очком по данному критерию она получит при финальном подсчете."
+        
+        let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
+        
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .actionSheet)
+        
+        alert.setValue(mutableData["myMutableTitle"], forKey: "attributedTitle")
+        alert.setValue(mutableData["myMutableMessage"], forKey: "attributedMessage")
+        
         alert.addAction(okAction)
         
         self.present(alert, animated: true) {
