@@ -68,7 +68,7 @@ class DecisionHelperUITests: XCTestCase {
         tablesQuery.staticTexts["Критерий: Природа"].tap()
         let reorderButton2 = tablesQuery.children(matching: .cell).matching(identifier: "Швейцария, Место 2").element(boundBy: 2).buttons["Reorder Швейцария, Место 2"]
         let reorderButton1 = tablesQuery.children(matching: .cell).matching(identifier: "Германия, 🔝 Место 1").element(boundBy: 2).buttons["Reorder Германия, 🔝 Место 1"]
-        reorderButton2.press(forDuration: 2, thenDragTo: reorderButton1)
+        reorderButton2.press(forDuration: 1, thenDragTo: reorderButton1)
         
         tablesQuery.cells.containing(.button, identifier:"Reorder Швейцария, 🔝 Место 1").staticTexts["Швейцария"].tap()
         tablesQuery.cells.containing(.button, identifier:"Reorder Германия, Место 2").staticTexts["Германия"].tap()
