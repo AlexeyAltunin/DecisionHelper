@@ -218,7 +218,7 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
             self.exampleAlert()
         }
         
-        let startAction = UIAlertAction(title: "Начать использование", style: .cancel) {
+        let startAction = UIAlertAction(title: "Начать использование", style: .default) {
             (action) in
             self.isDemoMode = false
         }
@@ -238,6 +238,12 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
         
         alert.addAction(exampleAction)
         alert.addAction(startAction)
+        
+        if let popoverController = alert.popoverPresentationController {
+            popoverController.sourceView = self.view
+            popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+            popoverController.permittedArrowDirections = []
+        }
         
         self.present(alert, animated: false) {
             // The alert was presented
@@ -281,6 +287,12 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
         alert.setValue(mutableData["myMutableMessage"], forKey: "attributedMessage")
         
         alert.addAction(okAction)
+        
+        if let popoverController = alert.popoverPresentationController {
+            popoverController.sourceView = self.view
+            popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+            popoverController.permittedArrowDirections = []
+        }
         
         self.present(alert, animated: true) {
         }

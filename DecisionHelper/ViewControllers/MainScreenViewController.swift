@@ -74,7 +74,7 @@ class MainScreenViewController: UIViewController {
         buyButton.isHidden = isPurchased
         
         if isPurchased {
-            versionLabel.text = "Версия: 1.0.0"
+            versionLabel.text = "Версия: 1.0"
         }
         
         infoButton.isHidden = isPurchased

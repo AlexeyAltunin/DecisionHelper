@@ -570,6 +570,10 @@
                                     <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" selected="YES" adjustable="YES" allowsDirectInteraction="YES" causesPageTurn="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </tableViewCell>
                         </prototypes>
                         <connections>
