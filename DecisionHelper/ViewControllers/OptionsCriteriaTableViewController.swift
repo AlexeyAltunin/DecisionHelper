@@ -32,7 +32,7 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         option1TextField.delegate = self
         option2TextField.delegate = self
         option3TextField.delegate = self
@@ -48,7 +48,7 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
             self.demoDescriptionAlert()
         }
         
-        registerForKeyboardNotifications()
+        setupViewResizerOnKeyboardShown()
     }
     
     func setExampleData() {
@@ -306,33 +306,41 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
         self.criteria = optionsComparisonViewController.criteria!
     }
     
-    func registerForKeyboardNotifications() {
-        NotificationCenter.default.addObserver(self, selector:
-            #selector(keyboardWasShown(_:)),
-                                               name: .UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector:
-            #selector(keyboardWillBeHidden(_:)),
-                                               name: .UIKeyboardWillHide, object: nil)
-        
-    }
-   
-    @objc func keyboardWasShown(_ notificiation: NSNotification) {
-        guard let info = notificiation.userInfo,
-            let keyboardFrameValue =
-            info[UIKeyboardFrameBeginUserInfoKey] as? NSValue
-            else { return }
-                let keyboardFrame = keyboardFrameValue.cgRectValue
-        let keyboardSize = keyboardFrame.size
-        
-        let contentInsets = UIEdgeInsetsMake(0.0, 0.0,
-                                             keyboardSize.height, 0.0)
-        self.tableView.contentInset = contentInsets
-        self.tableView.scrollIndicatorInsets = contentInsets
+    func setupViewResizerOnKeyboardShown() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShowForResizing(_:)),
+                                               name: Notification.Name.UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHideForResizing(_:)),
+                                               name: Notification.Name.UIKeyboardWillHide,
+                                               object: nil)
     }
     
-    @objc func keyboardWillBeHidden(_ notification: NSNotification) {
-        let contentInsets = UIEdgeInsets.zero
-        self.tableView.contentInset = contentInsets
-        self.tableView.scrollIndicatorInsets = contentInsets
+    @objc func keyboardWillShowForResizing(_ notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
+            let window = self.view.window?.frame {
+            // We're not just minusing the kb height from the view height because
+            // the view could already have been resized for the keyboard before
+            self.view.frame = CGRect(x: self.view.frame.origin.x,
+                                     y: self.view.frame.origin.y,
+                                     width: self.view.frame.width,
+                                     height: window.origin.y + window.height - keyboardSize.height)
+        } else {
+            debugPrint("We're showing the keyboard and either the keyboard size or window is nil: panic widely.")
+        }
     }
+    
+    @objc func keyboardWillHideForResizing(_ notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            let viewHeight = self.view.frame.height
+            self.view.frame = CGRect(x: self.view.frame.origin.x,
+                                     y: self.view.frame.origin.y,
+                                     width: self.view.frame.width,
+                                     height: viewHeight + keyboardSize.height)
+        } else {
+            debugPrint("We're about to hide the keyboard and the keyboard size is nil. Now is the rapture.")
+        }
+    }
+
 }
