@@ -85,10 +85,11 @@ class OptionsComparisonTableViewController: UITableViewController {
     }
     
      override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        let movedObject = self.separatedOptions[fromIndexPath.section]![fromIndexPath.row]
-        
-        self.separatedOptions[fromIndexPath.section]!.remove(at: fromIndexPath.row)
-        self.separatedOptions[fromIndexPath.section]!.insert(movedObject, at: to.row)
+        if fromIndexPath.section == to.section {
+            let movedObject = self.separatedOptions[fromIndexPath.section]![fromIndexPath.row]
+            self.separatedOptions[fromIndexPath.section]!.remove(at: fromIndexPath.row)
+            self.separatedOptions[fromIndexPath.section]!.insert(movedObject, at: to.row)
+        }
         self.tableView.reloadData()
      }
     
