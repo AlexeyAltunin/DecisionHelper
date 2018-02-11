@@ -316,6 +316,7 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
                                                name: Notification.Name.UIKeyboardWillHide,
                                                object: nil)
     }
+
     
     @objc func keyboardWillShowForResizing(_ notification: Notification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
