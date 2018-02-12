@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A652C982030BAE500FF213B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A652C972030BAE500FF213B /* StoreKit.framework */; };
 		8A8E3D53200BF5880054910D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8E3D52200BF5880054910D /* AppDelegate.swift */; };
 		8A8E3D55200BF5880054910D /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8E3D54200BF5880054910D /* MainScreenViewController.swift */; };
 		8A8E3D58200BF5880054910D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E3D56200BF5880054910D /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		8AB4268C20150FBD001B7B7D /* OptionsComparisonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB4268B20150FBD001B7B7D /* OptionsComparisonTableViewController.swift */; };
 		8ABDE5B4202767DD0094BD2E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABDE5B3202767DD0094BD2E /* Alert.swift */; };
 		8AD643EE200EA79D00C469F7 /* OptionsCriteriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD643ED200EA79D00C469F7 /* OptionsCriteriaTableViewController.swift */; };
+		8AE70573203227EF00E9961B /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE70572203227EF00E9961B /* IAPService.swift */; };
 		8AE7398F20138FEE00C71473 /* Criteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE7398E20138FEE00C71473 /* Criteria.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A652C972030BAE500FF213B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8A8E3D4F200BF5880054910D /* DecisionHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecisionHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8E3D52200BF5880054910D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A8E3D54200BF5880054910D /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -53,11 +56,13 @@
 		8A8E3D72200BF5890054910D /* DecisionHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionHelperUITests.swift; sourceTree = "<group>"; };
 		8A8E3D74200BF5890054910D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A99A6272019173F00A624F1 /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
+		8AA4E62920323E5C00F4D644 /* DecisionHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DecisionHelper.entitlements; sourceTree = "<group>"; };
 		8AB426872013956A001B7B7D /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		8AB4268920139AAE001B7B7D /* Decision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decision.swift; sourceTree = "<group>"; };
 		8AB4268B20150FBD001B7B7D /* OptionsComparisonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsComparisonTableViewController.swift; sourceTree = "<group>"; };
 		8ABDE5B3202767DD0094BD2E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		8AD643ED200EA79D00C469F7 /* OptionsCriteriaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsCriteriaTableViewController.swift; sourceTree = "<group>"; };
+		8AE70572203227EF00E9961B /* IAPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPService.swift; sourceTree = "<group>"; };
 		8AE7398E20138FEE00C71473 /* Criteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Criteria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A652C982030BAE500FF213B /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A652C942030BA2000FF213B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A652C972030BAE500FF213B /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A8E3D46200BF5880054910D = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +107,7 @@
 				8A8E3D66200BF5880054910D /* DecisionHelperTests */,
 				8A8E3D71200BF5890054910D /* DecisionHelperUITests */,
 				8A8E3D50200BF5880054910D /* Products */,
+				8A652C942030BA2000FF213B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +124,8 @@
 		8A8E3D51200BF5880054910D /* DecisionHelper */ = {
 			isa = PBXGroup;
 			children = (
+				8AA4E62920323E5C00F4D644 /* DecisionHelper.entitlements */,
+				8AE70571203227B900E9961B /* Helpers */,
 				8AE7398D20138F0200C71473 /* Models */,
 				8AE7398C20138E6D00C71473 /* ViewControllers */,
 				8A8E3D52200BF5880054910D /* AppDelegate.swift */,
@@ -135,6 +152,14 @@
 				8A8E3D74200BF5890054910D /* Info.plist */,
 			);
 			path = DecisionHelperUITests;
+			sourceTree = "<group>";
+		};
+		8AE70571203227B900E9961B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8AE70572203227EF00E9961B /* IAPService.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8AE7398C20138E6D00C71473 /* ViewControllers */ = {
@@ -228,6 +253,14 @@
 					8A8E3D4E200BF5880054910D = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					8A8E3D62200BF5880054910D = {
 						CreatedOnToolsVersion = 9.0;
@@ -298,6 +331,7 @@
 				8AD643EE200EA79D00C469F7 /* OptionsCriteriaTableViewController.swift in Sources */,
 				8AB426882013956A001B7B7D /* Option.swift in Sources */,
 				8A8E3D53200BF5880054910D /* AppDelegate.swift in Sources */,
+				8AE70573203227EF00E9961B /* IAPService.swift in Sources */,
 				8AB4268A20139AAE001B7B7D /* Decision.swift in Sources */,
 				8ABDE5B4202767DD0094BD2E /* Alert.swift in Sources */,
 				8AB4268C20150FBD001B7B7D /* OptionsComparisonTableViewController.swift in Sources */,

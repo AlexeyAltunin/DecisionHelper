@@ -69,6 +69,9 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func buyButtonTapped(_ sender: Any) {
+        IAPServise.shared.getProducts()
+        IAPServise.shared.purchase(product: .nonConsumable)
+        
         isPurchased = true
         
         buyButton.isHidden = isPurchased
