@@ -218,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DecisionHelper/ViewControllers/ResultTableViewController.swift"
-            timestampString = "539986023.605435"
+            timestampString = "540341504.676259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -438,15 +438,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DecisionHelper/ViewControllers/MainScreenViewController.swift"
-            timestampString = "540161384.364484"
+            timestampString = "540343140.640758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "buyButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -458,39 +458,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DecisionHelper/Helpers/IAPService.swift"
-            timestampString = "540161384.364542"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "getProducts()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DecisionHelper/Helpers/IAPService.swift"
-            timestampString = "540161384.365051"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "getProducts()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DecisionHelper/Helpers/IAPService.swift"
-            timestampString = "540161384.365258"
+            timestampString = "540343140.641273"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -506,12 +474,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DecisionHelper/Helpers/IAPService.swift"
-            timestampString = "540161415.074773"
+            timestampString = "540343140.641367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "paymentQueue(_:updatedTransactions:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getProducts()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -522,23 +490,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DecisionHelper/Helpers/IAPService.swift"
-            timestampString = "540161528.025057"
+            timestampString = "540343140.641432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "purchase(product:)"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getProducts()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DecisionHelper/Helpers/IAPService.swift"
-            timestampString = "540161806.289239"
+            timestampString = "540343140.641486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -554,7 +522,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DecisionHelper/Helpers/IAPService.swift"
-            timestampString = "540161905.0958869"
+            timestampString = "540343140.641542"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "purchase(product:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DecisionHelper/Helpers/IAPService.swift"
+            timestampString = "540343140.6415941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -570,7 +554,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DecisionHelper/Helpers/IAPService.swift"
-            timestampString = "540161915.770468"
+            timestampString = "540343140.641645"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -586,12 +570,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DecisionHelper/Helpers/IAPService.swift"
-            timestampString = "540161917.272591"
+            timestampString = "540343140.6416939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "paymentQueue(_:updatedTransactions:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "restorePurchases()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DecisionHelper/Helpers/IAPService.swift"
+            timestampString = "540343140.641753"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "restorePurchases()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DecisionHelper/Helpers/IAPService.swift"
+            timestampString = "540343140.641802"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "restorePurchases()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DecisionHelper/Helpers/IAPService.swift"
+            timestampString = "540343140.641852"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "deliverPurchaseNotificationFor(identifier:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

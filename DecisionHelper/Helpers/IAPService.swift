@@ -19,6 +19,7 @@ class IAPServise: NSObject {
     
     var products = [SKProduct]()
     let paymentQueue = SKPaymentQueue.default()
+    var status = ""
     
     func getProducts() {
         let products: Set = [
@@ -57,10 +58,53 @@ extension IAPServise: SKPaymentTransactionObserver {
         for transaction in transactions {
             print(transaction.transactionState.status(), transaction.payment.productIdentifier)
             switch transaction.transactionState {
-            case .purchasing: break
-            default: queue.finishTransaction(transaction)
+            case .purchased:
+                complete(transaction: transaction)
+                break
+            case .failed:
+                fail(transaction: transaction)
+                break
+            case .restored:
+                restore(transaction: transaction)
+                break
+            case .deferred:
+                break
+            case .purchasing:
+                break
             }
         }
+    }
+    
+    private func complete(transaction: SKPaymentTransaction) {
+        print("complete...")
+        deliverPurchaseNotificationFor(identifier: transaction.payment.productIdentifier)
+        SKPaymentQueue.default().finishTransaction(transaction)
+    }
+    
+    private func restore(transaction: SKPaymentTransaction) {
+        guard let productIdentifier = transaction.original?.payment.productIdentifier else { return }
+        
+        print("restore... \(productIdentifier)")
+        deliverPurchaseNotificationFor(identifier: productIdentifier)
+        SKPaymentQueue.default().finishTransaction(transaction)
+    }
+    
+    private func fail(transaction: SKPaymentTransaction) {
+        print("fail...")
+        if let transactionError = transaction.error as? NSError {
+            if transactionError.code != SKError.paymentCancelled.rawValue {
+                print("Transaction Error: \(transaction.error?.localizedDescription)")
+            }
+        }
+        
+        SKPaymentQueue.default().finishTransaction(transaction)
+    }
+    
+    private func deliverPurchaseNotificationFor(identifier: String?) {
+        guard let identifier = identifier else { return }
+        
+        UserDefaults.standard.set(true, forKey: identifier)
+        UserDefaults.standard.synchronize()
     }
 }
 
