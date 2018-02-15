@@ -7,7 +7,7 @@
 //
 
 enum IAPPRoduct: String {
-    case nonConsumable = "com.alexey.altunin.DecisionHelper.FullVersion"
+    case nonConsumable = "com.alexey.altunin.DecisionHelper.FullVersion1"
 }
 
 import Foundation
@@ -60,6 +60,10 @@ extension IAPServise: SKPaymentTransactionObserver {
             switch transaction.transactionState {
             case .purchased:
                 complete(transaction: transaction)
+                if let tabsController = UIApplication.shared.delegate?.window??.rootViewController as? MainScreenViewController {
+                    tabsController.doAfterPurchase()
+                }
+
                 break
             case .failed:
                 fail(transaction: transaction)
@@ -91,9 +95,9 @@ extension IAPServise: SKPaymentTransactionObserver {
     
     private func fail(transaction: SKPaymentTransaction) {
         print("fail...")
-        if let transactionError = transaction.error as? NSError {
+        if let transactionError = transaction.error as NSError? {
             if transactionError.code != SKError.paymentCancelled.rawValue {
-                print("Transaction Error: \(transaction.error?.localizedDescription)")
+                print("Transaction Error: \(String(describing: transaction.error?.localizedDescription))")
             }
         }
         

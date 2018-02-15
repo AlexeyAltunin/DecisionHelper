@@ -16,7 +16,7 @@ class MainScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         versionLabel.text = "Версия: Lite 1.0.0"
         
         IAPServise.shared.getProducts()
@@ -53,11 +53,7 @@ class MainScreenViewController: UIViewController {
         isPurchased = true
         
         buyButton.isHidden = isPurchased
-        
-        if isPurchased {
-            versionLabel.text = "Версия: 1.0"
-        }
-        
+        versionLabel.text = "Версия: 1.0"
         infoButton.isHidden = isPurchased
     }
     
@@ -81,10 +77,6 @@ class MainScreenViewController: UIViewController {
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(defaults.bool(forKey: IAPPRoduct.nonConsumable.rawValue))
-        if defaults.bool(forKey: IAPPRoduct.nonConsumable.rawValue) {
-            doAfterPurchase()
-        }
         
         let navVC = segue.destination as! UINavigationController
         let optionsCriterianViewController = navVC.viewControllers.first as! OptionsCriteriaTableViewController
