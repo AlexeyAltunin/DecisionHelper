@@ -501,7 +501,7 @@
                     <navigationItem key="navigationItem" title="Шаг 1" id="I2C-rw-Gl5">
                         <barButtonItem key="leftBarButtonItem" title="Назад" id="Ybp-im-Bpr">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="showDetail" action="showViewController:sender:" id="xz4-5G-2QC"/>
+                                <segue destination="Uwy-z1-YCv" kind="unwind" unwindAction="unwindToMainScreenViewWithSegue:" id="yI7-Si-fp9"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Далее" id="N5q-ep-raO">
@@ -529,6 +529,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogC-2J-ezE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Uwy-z1-YCv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-2738" y="10"/>
         </scene>
