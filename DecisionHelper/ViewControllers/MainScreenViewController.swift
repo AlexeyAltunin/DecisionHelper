@@ -49,6 +49,11 @@ class MainScreenViewController: UIViewController {
         IAPServise.shared.purchase(product: .nonConsumable)
     }
     
+    @IBAction func descriptionButtonTapped(_ sender: Any) {
+        descriptionAlert()
+    }
+    
+    
     func doAfterPurchase() {
         isPurchased = true
         
@@ -70,6 +75,37 @@ class MainScreenViewController: UIViewController {
             preferredStyle: .alert
         )
         alert.addAction(okAction)
+        
+        self.present(alert, animated: true) {
+            // The alert was presented
+        }
+    }
+    
+    @IBAction func descriptionAlert() {
+        let closeAction = UIAlertAction(title: "Закрыть", style: .cancel) {
+            (action) in
+        }
+        
+        let title = "Описание"
+        let message = "Приложение помогает решить проблему выбора между несколькими альтернативами. Это не очередная рулетка или подбрасывание монеты, где выбор основывается на генерации случайного значения. Основная особенность заключается в том, что приложение предоставляет количественную оценку, основываясь именно на ваших предпочтениях и субъективном мнении.\nДля вычисления лучшего результата в программу заложен математический алгоритм из “Теории принятия решений”, который называется “Метод анализа иерархий”. (https://ru.wikipedia.org/wiki/Метод_анализа_иерархий)\nДля быстрого знакомства с программой рекомендуется запустить пример."
+        
+        let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
+        
+        // Create and configure the alert controller.
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .actionSheet)
+        
+        alert.setValue(mutableData["myMutableTitle"], forKey: "attributedTitle")
+        alert.setValue(mutableData["myMutableMessage"], forKey: "attributedMessage")
+        
+        alert.addAction(closeAction)
+        
+        if let popoverController = alert.popoverPresentationController {
+            popoverController.sourceView = self.view
+            popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+            popoverController.permittedArrowDirections = []
+        }
         
         self.present(alert, animated: true) {
             // The alert was presented

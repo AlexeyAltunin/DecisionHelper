@@ -63,7 +63,6 @@ extension IAPServise: SKPaymentTransactionObserver {
                 if let tabsController = UIApplication.shared.delegate?.window??.rootViewController as? MainScreenViewController {
                     tabsController.doAfterPurchase()
                 }
-
                 break
             case .failed:
                 fail(transaction: transaction)

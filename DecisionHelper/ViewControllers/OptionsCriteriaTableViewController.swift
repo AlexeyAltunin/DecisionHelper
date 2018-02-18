@@ -45,7 +45,7 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
         criteria5TextField.delegate = self
         
         if isDemoMode == true {
-            self.demoDescriptionAlert()
+            self.exampleAlert()
         }
         
         setupViewResizerOnKeyboardShown()
@@ -211,48 +211,10 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
         }
     }
     
-    @IBAction func demoDescriptionAlert() {
-        let exampleAction = UIAlertAction(title: "Запустить пример", style: .default) {
-            (action) in
-            self.setExampleData()
-            self.exampleAlert()
-        }
-        
-        let startAction = UIAlertAction(title: "Начать использование", style: .default) {
-            (action) in
-            self.isDemoMode = false
-        }
-        
-        let title = "Описание"
-        let message = "Приложение помогает решить проблему выбора между несколькими альтернативами. Это не очередная рулетка или подбрасывание монеты, где выбор основывается на генерации случайного значения. Основная особенность заключается в том, что приложение предоставляет количественную оценку, основываясь именно на ваших предпочтениях и субъективном мнении.\nДля вычисления лучшего результата в программу заложен математический алгоритм из “Теории принятия решений”, который называется “Метод анализа иерархий”. (https://ru.wikipedia.org/wiki/Метод_анализа_иерархий)\nДля быстрого знакомства с программой рекомендуется запустить пример."
-        
-        let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
-        
-        // Create and configure the alert controller.
-        let alert = UIAlertController(title: title,
-                                      message: message,
-                                      preferredStyle: .actionSheet)
-        
-        alert.setValue(mutableData["myMutableTitle"], forKey: "attributedTitle")
-        alert.setValue(mutableData["myMutableMessage"], forKey: "attributedMessage")
-        
-        alert.addAction(exampleAction)
-        alert.addAction(startAction)
-        
-        if let popoverController = alert.popoverPresentationController {
-            popoverController.sourceView = self.view
-            popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
-            popoverController.permittedArrowDirections = []
-        }
-        
-        self.present(alert, animated: false) {
-            // The alert was presented
-        }
-    }
-    
     @IBAction func exampleAlert() {
         let okAction = UIAlertAction(title: "Продолжить", style: .default) {
             (action) in
+            self.setExampleData()
             self.step1Alert()
         }
         
