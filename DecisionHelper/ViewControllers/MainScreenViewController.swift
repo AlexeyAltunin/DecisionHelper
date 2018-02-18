@@ -82,7 +82,7 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func descriptionAlert() {
-        let closeAction = UIAlertAction(title: "Закрыть", style: .cancel) {
+        let closeAction = UIAlertAction(title: "Закрыть", style: .default) {
             (action) in
         }
         
