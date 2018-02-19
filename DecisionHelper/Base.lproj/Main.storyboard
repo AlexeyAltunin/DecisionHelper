@@ -46,7 +46,7 @@
                                                 <rect key="frame" x="120" y="0.0" width="200" height="212.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8u-wr-Vjw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="49"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="38.5"/>
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -56,7 +56,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-wt-iwW">
-                                                        <rect key="frame" x="0.0" y="54" width="200" height="49.5"/>
+                                                        <rect key="frame" x="0.0" y="43.5" width="200" height="38.5"/>
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,7 +66,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLs-oU-uCi">
-                                                        <rect key="frame" x="0.0" y="108.5" width="200" height="49.5"/>
+                                                        <rect key="frame" x="0.0" y="87" width="200" height="38.5"/>
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,13 +76,23 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7J4-Ns-28u">
-                                                        <rect key="frame" x="0.0" y="163" width="200" height="49.5"/>
+                                                        <rect key="frame" x="0.0" y="130.5" width="200" height="38.5"/>
                                                         <color key="backgroundColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Купить полную версию"/>
                                                         <connections>
                                                             <action selector="buyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8r-0u-CMe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWD-Bf-rwB">
+                                                        <rect key="frame" x="0.0" y="174" width="200" height="38.5"/>
+                                                        <color key="backgroundColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Восстановить покупку"/>
+                                                        <connections>
+                                                            <action selector="restoreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNW-1E-QJX"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -148,6 +158,7 @@
                     <connections>
                         <outlet property="buyButton" destination="7J4-Ns-28u" id="orh-4M-oRm"/>
                         <outlet property="infoButton" destination="czT-sB-Ll5" id="aXJ-79-IF3"/>
+                        <outlet property="restoreButton" destination="VWD-Bf-rwB" id="P0w-aE-CpP"/>
                         <outlet property="versionLabel" destination="yMp-k8-Zlh" id="NJZ-nk-7hW"/>
                     </connections>
                 </viewController>

@@ -25,6 +25,7 @@ class MainScreenViewController: UIViewController {
         if defaults.bool(forKey: IAPPRoduct.nonConsumable.rawValue) {
             doAfterPurchase()
         } else {
+            restoreButton.isHidden = true
             IAPServise.shared.restorePurchases()
         }
         
@@ -40,6 +41,7 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var restoreButton: UIButton!
     @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var infoButton: UIButton!
     
@@ -51,6 +53,11 @@ class MainScreenViewController: UIViewController {
         IAPServise.shared.purchase(product: .nonConsumable)
     }
     
+    
+    @IBAction func restoreButtonTapped(_ sender: Any) {
+        doAfterPurchase()
+    }
+    
     @IBAction func descriptionButtonTapped(_ sender: Any) {
         descriptionAlert()
     }
@@ -60,6 +67,7 @@ class MainScreenViewController: UIViewController {
         isPurchased = true
         
         buyButton.isHidden = isPurchased
+        restoreButton.isHidden = isPurchased
         versionLabel.text = "Версия: 1.0"
         infoButton.isHidden = isPurchased
     }
