@@ -24,6 +24,8 @@ class MainScreenViewController: UIViewController {
         print(defaults.bool(forKey: IAPPRoduct.nonConsumable.rawValue))
         if defaults.bool(forKey: IAPPRoduct.nonConsumable.rawValue) {
             doAfterPurchase()
+        } else {
+            IAPServise.shared.restorePurchases()
         }
         
     }

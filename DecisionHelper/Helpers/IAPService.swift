@@ -69,6 +69,9 @@ extension IAPServise: SKPaymentTransactionObserver {
                 break
             case .restored:
                 restore(transaction: transaction)
+                if let tabsController = UIApplication.shared.delegate?.window??.rootViewController as? MainScreenViewController {
+                    tabsController.doAfterPurchase()
+                }
                 break
             case .deferred:
                 break
