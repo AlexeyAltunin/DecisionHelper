@@ -70,8 +70,7 @@ extension IAPServise: SKPaymentTransactionObserver {
             case .restored:
                 restore(transaction: transaction)
                 if let tabsController = UIApplication.shared.delegate?.window??.rootViewController as? MainScreenViewController {
-                    tabsController.restoreButton.isHidden = false
-                    tabsController.buyButton.isHidden = true
+                    tabsController.doAfterPurchase()
                 }
                 break
             case .deferred:

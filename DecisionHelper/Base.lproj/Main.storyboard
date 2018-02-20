@@ -37,16 +37,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8b-Xn-2VP">
-                                        <rect key="frame" x="0.0" y="79.5" width="320" height="212.5"/>
+                                        <rect key="frame" x="0.0" y="67" width="320" height="212"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTb-3v-Fd7">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="212.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="212"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5Eq-Ef-TbT">
-                                                <rect key="frame" x="120" y="0.0" width="200" height="212.5"/>
+                                                <rect key="frame" x="120" y="0.0" width="200" height="212"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8u-wr-Vjw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="38.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="49.5"/>
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -56,7 +56,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-wt-iwW">
-                                                        <rect key="frame" x="0.0" y="43.5" width="200" height="38.5"/>
+                                                        <rect key="frame" x="0.0" y="54.5" width="200" height="49"/>
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,7 +66,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLs-oU-uCi">
-                                                        <rect key="frame" x="0.0" y="87" width="200" height="38.5"/>
+                                                        <rect key="frame" x="0.0" y="108.5" width="200" height="49.5"/>
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,23 +76,13 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7J4-Ns-28u">
-                                                        <rect key="frame" x="0.0" y="130.5" width="200" height="38.5"/>
+                                                        <rect key="frame" x="0.0" y="163" width="200" height="49"/>
                                                         <color key="backgroundColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Купить полную версию"/>
                                                         <connections>
                                                             <action selector="buyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8r-0u-CMe"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWD-Bf-rwB">
-                                                        <rect key="frame" x="0.0" y="174" width="200" height="38.5"/>
-                                                        <color key="backgroundColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Восстановить покупку"/>
-                                                        <connections>
-                                                            <action selector="restoreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNW-1E-QJX"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -102,12 +92,11 @@
                                             <constraint firstItem="5Eq-Ef-TbT" firstAttribute="leading" secondItem="E8b-Xn-2VP" secondAttribute="leading" constant="120" id="9S5-35-kvH"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="lWD-wI-U02">
-                                        <rect key="frame" x="0.0" y="339.5" width="320" height="24.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iAv-mu-JNz">
+                                        <rect key="frame" x="0.0" y="315" width="320" height="61.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMp-k8-Zlh">
-                                                <rect key="frame" x="0.0" y="0.0" width="211.5" height="24.5"/>
-                                                <color key="backgroundColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="24.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
                                                         <attributes>
@@ -118,14 +107,30 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czT-sB-Ll5">
-                                                <rect key="frame" x="211.5" y="0.0" width="108.5" height="24.5"/>
-                                                <color key="backgroundColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <connections>
-                                                    <action selector="infoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrB-GS-tKM"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="lWD-wI-U02">
+                                                <rect key="frame" x="0.0" y="24.5" width="320" height="37"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWD-Bf-rwB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="281.5" height="37"/>
+                                                        <color key="backgroundColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Восстановить покупку"/>
+                                                        <connections>
+                                                            <action selector="restoreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNW-1E-QJX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czT-sB-Ll5">
+                                                        <rect key="frame" x="282.5" y="0.0" width="37.5" height="37"/>
+                                                        <color key="backgroundColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <connections>
+                                                            <action selector="infoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrB-GS-tKM"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.96161039010000005" green="0.70081974290000004" blue="0.064209661340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2018 Altunin. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiL-c0-mIH">

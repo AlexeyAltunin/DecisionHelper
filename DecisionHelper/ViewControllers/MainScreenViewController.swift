@@ -24,11 +24,7 @@ class MainScreenViewController: UIViewController {
         print(defaults.bool(forKey: IAPPRoduct.nonConsumable.rawValue))
         if defaults.bool(forKey: IAPPRoduct.nonConsumable.rawValue) {
             doAfterPurchase()
-        } else {
-            restoreButton.isHidden = true
-            IAPServise.shared.restorePurchases()
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +51,7 @@ class MainScreenViewController: UIViewController {
     
     
     @IBAction func restoreButtonTapped(_ sender: Any) {
-        doAfterPurchase()
+        IAPServise.shared.restorePurchases()
     }
     
     @IBAction func descriptionButtonTapped(_ sender: Any) {
