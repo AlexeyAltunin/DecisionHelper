@@ -62,22 +62,22 @@ class OptionsComparisonTableViewController: UITableViewController {
         self.criteria![indexPath.section].OptionRank[cuttentTitle] = Double(self.options!.count - indexPath.row)
         
         if placeValue == 1 {
-            cell.detailTextLabel?.text = "🔝 Место \(placeValue)"
+            cell.detailTextLabel?.text = "🔝 \(NSLocalizedString("place", value: "Place", comment: "")) \(placeValue)"
         } else if placeValue == self.options!.count {
-            cell.detailTextLabel?.text = "Место \(placeValue)"
+            cell.detailTextLabel?.text = "\(NSLocalizedString("place", value: "Place", comment: "")) \(placeValue)"
         } else {
-            cell.detailTextLabel?.text = "Место \(placeValue)"
+            cell.detailTextLabel?.text = "\(NSLocalizedString("place", value: "Place", comment: "")) \(placeValue)"
         }
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Критерий: \(self.criteria![section].Title)"
+        return "\(NSLocalizedString("criterion", value: "Сriterion", comment: "")): \(self.criteria![section].Title)"
     }
     
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return "Расставьте места, где 1 - лучшая альтернатива для критерия, \(self.options!.count) - худшая альтернатива"
+        return "\(NSLocalizedString("arrangePlaces", value: "arrange places, 1 - the best alternative", comment: "")), \(self.options!.count) - \(NSLocalizedString("theWorstAlternative", value: "the worst alternative", comment: ""))"
     }
     
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
@@ -113,13 +113,13 @@ class OptionsComparisonTableViewController: UITableViewController {
     }
     
     @IBAction func step2Alert() {
-        let okAction = UIAlertAction(title: "Продолжить", style: .default) {
+        let okAction = UIAlertAction(title: NSLocalizedString("continueAlertButton", value: "Next", comment: ""), style: .default) {
             (action) in
             // Respond to user selection of the action.
         }
         
-        let title = "Шаг 2"
-        let message = "Перед финальным подсчетом необходимо расставить места для альтернатив по каждому критерию, основываясь на вашем субъективном мнении и знании. Например, мы считаем, что природа лучше в Швейцарии и передвигаем ее на 1-ое место, Германия опустится на 2-ое место. Однако, по стоимости проживания Германия займет 1-ое место, так как жить там значительно дешевле.\nЧем выше место страны, тем больше очков по данному критерию она получит при финальном подсчете."
+        let title = NSLocalizedString("step2AlertTitle", value: "Step 2", comment: "")
+        let message = NSLocalizedString("step2Alert", value: "translation", comment: "")
         
         let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
         

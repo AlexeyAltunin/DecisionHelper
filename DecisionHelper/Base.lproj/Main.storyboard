@@ -29,7 +29,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="osG-wT-JMu">
                                 <rect key="frame" x="0.0" y="40" width="320" height="430"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Помощник в принятии решения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZm-D7-Mlu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decision Helper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZm-D7-Mlu">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="31.5"/>
                                         <color key="backgroundColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
@@ -50,7 +50,7 @@
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal" title="Начать"/>
+                                                        <state key="normal" title="Start"/>
                                                         <connections>
                                                             <segue destination="b9t-j8-2uV" kind="show" identifier="startSegue" id="EqB-dP-cwY"/>
                                                         </connections>
@@ -60,7 +60,7 @@
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Описание"/>
+                                                        <state key="normal" title="Description"/>
                                                         <connections>
                                                             <action selector="descriptionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXl-hl-wAZ"/>
                                                         </connections>
@@ -70,7 +70,7 @@
                                                         <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Пример использования"/>
+                                                        <state key="normal" title="Example"/>
                                                         <connections>
                                                             <segue destination="b9t-j8-2uV" kind="showDetail" identifier="howItWorksSegue" id="l17-H6-bEB"/>
                                                         </connections>
@@ -80,7 +80,7 @@
                                                         <color key="backgroundColor" red="0.97338080410000005" green="0.95645985430000002" blue="0.63121488339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Купить полную версию"/>
+                                                        <state key="normal" title="Buy full version"/>
                                                         <connections>
                                                             <action selector="buyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8r-0u-CMe"/>
                                                         </connections>
@@ -111,17 +111,17 @@
                                                 <rect key="frame" x="0.0" y="24.5" width="320" height="37"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWD-Bf-rwB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="281.5" height="37"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="37"/>
                                                         <color key="backgroundColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Восстановить покупку"/>
+                                                        <state key="normal" title="Restore purchase"/>
                                                         <connections>
                                                             <action selector="restoreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNW-1E-QJX"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czT-sB-Ll5">
-                                                        <rect key="frame" x="282.5" y="0.0" width="37.5" height="37"/>
+                                                        <rect key="frame" x="276" y="0.0" width="44" height="37"/>
                                                         <color key="backgroundColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <connections>
@@ -171,7 +171,7 @@
             </objects>
             <point key="canvasLocation" x="-3879" y="10"/>
         </scene>
-        <!--Шаг 1-->
+        <!--Step 1-->
         <scene sceneID="c3E-2D-u6n">
             <objects>
                 <tableViewController id="n2I-gy-D2M" customClass="OptionsCriteriaTableViewController" customModule="DecisionHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -183,7 +183,7 @@
                         <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <sections>
-                            <tableViewSection headerTitle="Введите альтернативы" id="Mko-RL-JOQ">
+                            <tableViewSection headerTitle="Enter alternatives" id="Mko-RL-JOQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="1KP-aV-KuE">
                                         <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
@@ -192,7 +192,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Альтернатива 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQ5-s7-XUC">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Alternative 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQ5-s7-XUC">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                                     <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="textColor"/>
@@ -217,7 +217,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Альтернатива 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bet-5z-bAF">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Alternative 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bet-5z-bAF">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                                     <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="textColor"/>
@@ -241,7 +241,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Альтернатива 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ha1-pf-jFS">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Alternative 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ha1-pf-jFS">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                                     <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="textColor"/>
@@ -265,7 +265,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Альтернатива 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wqR-yl-naE">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Alternative 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wqR-yl-naE">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                                     <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="textColor"/>
@@ -289,7 +289,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Альтернатива 5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3B1-Ye-Fjm">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Alternative 5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3B1-Ye-Fjm">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                                     <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="textColor"/>
@@ -308,7 +308,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Введите критерии и их важность" id="bY3-gV-ry6">
+                            <tableViewSection headerTitle="Enter the criteria and their importance" id="bY3-gV-ry6">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="5" indentationWidth="0.0" rowHeight="88" id="lgP-Wg-HHR">
                                         <rect key="frame" x="0.0" y="331.5" width="320" height="88"/>
@@ -320,7 +320,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OQ5-ln-1HI">
                                                     <rect key="frame" x="0.0" y="-0.5" width="320" height="87.5"/>
                                                     <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Критерий 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lxV-QN-xaP">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Criterion 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lxV-QN-xaP">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                                             <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <color key="tintColor" red="1" green="0.85359953190000004" blue="0.32975825120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -362,7 +362,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cbx-K5-Kgt">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
                                                     <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Критерий 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-tU-cl4">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Criterion 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-tU-cl4">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                                             <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <color key="tintColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -404,7 +404,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="w8O-ln-v2i">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
                                                     <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Критерий 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCl-mh-N48">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Criterion 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCl-mh-N48">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                                             <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="textColor"/>
@@ -444,7 +444,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ll5-kq-ZF0">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
                                                     <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Критерий 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bw9-Gs-zQf">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Criterion 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bw9-Gs-zQf">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                                             <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="textColor"/>
@@ -484,7 +484,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="el6-o1-Ntq">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
                                                     <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Критерий 5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zdp-1A-2NJ">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Criterion 5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zdp-1A-2NJ">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                                             <color key="backgroundColor" red="0.90867875649999996" green="0.8473036088" blue="0.66537520930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <color key="tintColor" red="1" green="0.62025530750000002" blue="0.086650549600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -524,13 +524,13 @@
                             <outlet property="delegate" destination="n2I-gy-D2M" id="2v9-uo-gtA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Шаг 1" id="I2C-rw-Gl5">
-                        <barButtonItem key="leftBarButtonItem" title="Назад" id="Ybp-im-Bpr">
+                    <navigationItem key="navigationItem" title="Step 1" id="I2C-rw-Gl5">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ybp-im-Bpr">
                             <connections>
                                 <segue destination="Uwy-z1-YCv" kind="unwind" unwindAction="unwindToMainScreenViewWithSegue:" id="yI7-Si-fp9"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Далее" id="N5q-ep-raO">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="N5q-ep-raO">
                             <connections>
                                 <segue destination="Wf6-1h-qlh" kind="presentation" identifier="toOprionsComparison" id="Bka-n6-rLq"/>
                             </connections>
@@ -559,7 +559,7 @@
             </objects>
             <point key="canvasLocation" x="-2738" y="10"/>
         </scene>
-        <!--Шаг 2-->
+        <!--Step 2-->
         <scene sceneID="vaZ-88-3uP">
             <objects>
                 <tableViewController id="eiR-dk-z0I" customClass="OptionsComparisonTableViewController" customModule="DecisionHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -610,13 +610,13 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Шаг 2" id="BE5-7A-PPF">
-                        <barButtonItem key="leftBarButtonItem" title="Назад" id="oBL-4Z-7bg">
+                    <navigationItem key="navigationItem" title="Step 2" id="BE5-7A-PPF">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="oBL-4Z-7bg">
                             <connections>
                                 <segue destination="F8Y-tv-let" kind="unwind" identifier="backUnwind" unwindAction="unwindToOptionsCriteriaTableViewWithSegue:" id="nTm-A1-flY"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Результат" id="qcl-LI-XJH">
+                        <barButtonItem key="rightBarButtonItem" title="Result" id="qcl-LI-XJH">
                             <connections>
                                 <segue destination="FbJ-oO-JQ8" kind="presentation" identifier="toResult" id="dPe-yL-bYX"/>
                             </connections>
@@ -629,7 +629,7 @@
             </objects>
             <point key="canvasLocation" x="-1804" y="10"/>
         </scene>
-        <!--Результат-->
+        <!--Result-->
         <scene sceneID="gzN-HW-obG">
             <objects>
                 <tableViewController id="ggC-4s-1fg" customClass="ResultTableViewController" customModule="DecisionHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -672,13 +672,13 @@
                             <outlet property="delegate" destination="ggC-4s-1fg" id="7ql-Ub-ONS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Результат" id="vtC-F7-84n">
-                        <barButtonItem key="leftBarButtonItem" title="Назад" id="SPS-H7-evQ">
+                    <navigationItem key="navigationItem" title="Result" id="vtC-F7-84n">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="SPS-H7-evQ">
                             <connections>
                                 <segue destination="Ngo-HM-9fk" kind="unwind" identifier="backUnwind" unwindAction="unwindToOptionsComparisonTableViewWithSegue:" id="nPR-QR-rEN"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Завершить" id="iPR-Dn-WbT">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="iPR-Dn-WbT">
                             <connections>
                                 <segue destination="Ngo-HM-9fk" kind="unwind" unwindAction="unwindToMainScreenViewWithSegue:" id="qsX-Ib-SaQ"/>
                             </connections>

@@ -51,17 +51,17 @@ class ResultTableViewController: UITableViewController {
         }
         
         cell.textLabel?.text = self.options![indexPath.row].Title
-        cell.detailTextLabel?.text = "Очков: \(self.options![indexPath.row].Points)"
+        cell.detailTextLabel?.text = "\(NSLocalizedString("pointsOf", value: "Points", comment: "")): \(self.options![indexPath.row].Points)"
         
         return cell
     }
  
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Лучшая альтернатива"
+        return NSLocalizedString("theBestAlternative", value: "The best alternative", comment: "")
     }
     
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        var criteriaLine = "Критерии: "
+        var criteriaLine = "\(NSLocalizedString("criteria", value: "Criteria", comment: "")): "
         
         self.criteria!.forEach { critery in
             criteriaLine += "\(critery.Title), "
@@ -71,13 +71,13 @@ class ResultTableViewController: UITableViewController {
     }
     
     @IBAction func step3Alert() {
-        let okAction = UIAlertAction(title: "Продолжить", style: .default) {
+        let okAction = UIAlertAction(title: NSLocalizedString("continueAlertButton", value: "Next", comment: ""), style: .default) {
             (action) in
             // Respond to user selection of the action.
         }
         
-        let title = "Результат"
-        let message = "На основании введенных данных алгоритм вычисляет итоговое количество очков. Альтернатива с наибольшим количеством очков является лучшей. В данном случае разница между Германией и Швейцарией несильно большая, однако именно для вас лучше будет поехать в Германию. В этом и заключается особенность метода: вычисления были сделаны в соответсвии с вашими потребностями, условиями задачи и основываясь на вашем мнении."
+        let title = NSLocalizedString("resultAlertTitle", value: "Result", comment: "")
+        let message = NSLocalizedString("resultAlert", value: "translation", comment: "")
         
         let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
         

@@ -52,13 +52,13 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
     }
     
     func setExampleData() {
-        option1TextField.text = "Германия"
-        option2TextField.text = "Швейцария"
-        criteria1TextField.text = "Природа"
+        option1TextField.text = NSLocalizedString("exampleAlternative1", value: "Germany", comment: "")
+        option2TextField.text = NSLocalizedString("exampleAlternative2", value: "Switzerland", comment: "")
+        criteria1TextField.text = NSLocalizedString("exampleСriterion1", value: "Nature", comment: "")
         criteria1SegmentControl.selectedSegmentIndex = 2
-        criteria2TextField.text = "Стоимость проживания"
+        criteria2TextField.text = NSLocalizedString("exampleСriterion2", value: "Cost of living", comment: "")
         criteria2SegmentControl.selectedSegmentIndex = 3
-        criteria3TextField.text = "Стоимость билетов"
+        criteria3TextField.text = NSLocalizedString("exampleСriterion3", value: "Ticket prices", comment: "")
         criteria3SegmentControl.selectedSegmentIndex = 1
         
         option1TextField.isUserInteractionEnabled = !isDemoMode
@@ -178,14 +178,14 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
     }
     
     @IBAction func fieldsCantBeEqualAlert() {
-        let okAction = UIAlertAction(title: "Продолжить", style: .cancel) {
+        let okAction = UIAlertAction(title: NSLocalizedString("continueAlertButton", value: "Next", comment: ""), style: .cancel) {
             (action) in
             // Respond to user selection of the action.
         }
         
         // Create and configure the alert controller.
-        let alert = UIAlertController(title: "Некорректные данные",
-                                      message: "Не может быть одинаковых критериев или альтернатив",
+        let alert = UIAlertController(title: NSLocalizedString("incorrectDataTitle", value: "Incorrect data", comment: ""),
+                                      message: NSLocalizedString("fieldsCantBeEqualAlert", value: "It can't be the same criteria or alternatives", comment: ""),
                                       preferredStyle: .alert)
         alert.addAction(okAction)
         
@@ -195,14 +195,14 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
     }
     
     @IBAction func fieldsShouldBeSetAlert() {
-        let okAction = UIAlertAction(title: "Продолжить", style: .cancel) {
+        let okAction = UIAlertAction(title: NSLocalizedString("continueAlertButton", value: "Next", comment: ""), style: .cancel) {
             (action) in
             // Respond to user selection of the action.
         }
-        
+
         // Create and configure the alert controller.
-        let alert = UIAlertController(title: "Некорректные данные",
-            message: "Введите как минимум 2 альтернативы и 2 критерия",
+        let alert = UIAlertController(title: NSLocalizedString("incorrectDataTitle", value: "Incorrect data", comment: ""),
+            message: NSLocalizedString("fieldsShouldBeSetAlert", value: "Enter at least 2 alternatives and 2 criteria", comment: ""),
             preferredStyle: .alert)
         alert.addAction(okAction)
 
@@ -212,15 +212,15 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
     }
     
     @IBAction func exampleAlert() {
-        let okAction = UIAlertAction(title: "Продолжить", style: .default) {
+        let okAction = UIAlertAction(title: NSLocalizedString("continueAlertButton", value: "Next", comment: ""), style: .default) {
             (action) in
             self.setExampleData()
             self.step1Alert()
         }
         
         // Create and configure the alert controller.
-        let alert = UIAlertController(title: "Запущен пример",
-                                      message: "В режиме примера редактирование полей недоступно",
+        let alert = UIAlertController(title: NSLocalizedString("exampleAlertTitle", value: "Example started", comment: ""),
+                                      message: NSLocalizedString("exampleAlert", value: "In the example mode, editing fields is not available", comment: ""),
                                       preferredStyle: .alert)
         
         alert.addAction(okAction)
@@ -231,13 +231,13 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
     }
     
     @IBAction func step1Alert() {
-        let okAction = UIAlertAction(title: "Продолжить", style: .default) {
+        let okAction = UIAlertAction(title: NSLocalizedString("continueAlertButton", value: "Next", comment: ""), style: .default) {
             (action) in
             // Respond to user selection of the action.
         }
         
-        let title = "Шаг 1"
-        let message = "Задача: Выбираем страну для путешествия на одного человека продолжительностью 3 недели. Выбор пал на две альтернативы: ‘Германия‘ или ‘Швейцария‘. Для выбора лучшей страны необходимо обозначить важные для нас критерии выбора. Например: ‘Природа‘, ‘Стоимость проживания‘ и ‘Стоимость билетов‘. Далее расставим важность под каждым критерием:\n‘1. Природа‘ = ⭐️⭐️⭐️, это для нас довольно важный показатель но не самый приоритетный.\n‘2. Стоимость проживания‘ = ⭐️⭐️⭐️⭐️, так как мы собираемся в путешествие на 3 недели, то стоимость проживания будет одним из решающих факторов.\n‘3. Стоимость билетов‘ = ⭐️⭐️, не зависит от количества дней проживания, по условию летит всего один человек, поэтому данный критерий для нас маловажен."
+        let title = NSLocalizedString("step1AlertTitle", value: "Step 1", comment: "")
+        let message = NSLocalizedString("step1Alert", value: "translation", comment: "")
         
         let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
         

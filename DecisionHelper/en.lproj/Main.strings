@@ -1,0 +1,156 @@
+
+/* Class = "UITextField"; placeholder = "Альтернатива 5"; ObjectID = "3B1-Ye-Fjm"; */
+"3B1-Ye-Fjm.placeholder" = "Альтернатива 5";
+
+/* Class = "UITextField"; placeholder = "Критерий 2"; ObjectID = "5ab-tU-cl4"; */
+"5ab-tU-cl4.placeholder" = "Критерий 2";
+
+/* Class = "UIButton"; normalTitle = "Купить полную версию"; ObjectID = "7J4-Ns-28u"; */
+"7J4-Ns-28u.normalTitle" = "Купить полную версию";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "8fN-2J-TGU"; */
+"8fN-2J-TGU.text" = "Detail";
+
+/* Class = "UINavigationItem"; title = "Шаг 2"; ObjectID = "BE5-7A-PPF"; */
+"BE5-7A-PPF.title" = "Шаг 2";
+
+/* Class = "UITextField"; placeholder = "Альтернатива 2"; ObjectID = "Bet-5z-bAF"; */
+"Bet-5z-bAF.placeholder" = "Альтернатива 2";
+
+/* Class = "UITextField"; placeholder = "Критерий 4"; ObjectID = "Bw9-Gs-zQf"; */
+"Bw9-Gs-zQf.placeholder" = "Критерий 4";
+
+/* Class = "UISegmentedControl"; H3y-ex-P6W.segmentTitles[0] = "⭐️"; ObjectID = "H3y-ex-P6W"; */
+"H3y-ex-P6W.segmentTitles[0]" = "⭐️";
+
+/* Class = "UISegmentedControl"; H3y-ex-P6W.segmentTitles[1] = "⭐️⭐️"; ObjectID = "H3y-ex-P6W"; */
+"H3y-ex-P6W.segmentTitles[1]" = "⭐️⭐️";
+
+/* Class = "UISegmentedControl"; H3y-ex-P6W.segmentTitles[2] = "⭐️⭐️⭐️"; ObjectID = "H3y-ex-P6W"; */
+"H3y-ex-P6W.segmentTitles[2]" = "⭐️⭐️⭐️";
+
+/* Class = "UISegmentedControl"; H3y-ex-P6W.segmentTitles[3] = "⭐️⭐️⭐️⭐️"; ObjectID = "H3y-ex-P6W"; */
+"H3y-ex-P6W.segmentTitles[3]" = "⭐️⭐️⭐️⭐️";
+
+/* Class = "UISegmentedControl"; HhN-5O-Use.segmentTitles[0] = "⭐️"; ObjectID = "HhN-5O-Use"; */
+"HhN-5O-Use.segmentTitles[0]" = "⭐️";
+
+/* Class = "UISegmentedControl"; HhN-5O-Use.segmentTitles[1] = "⭐️⭐️"; ObjectID = "HhN-5O-Use"; */
+"HhN-5O-Use.segmentTitles[1]" = "⭐️⭐️";
+
+/* Class = "UISegmentedControl"; HhN-5O-Use.segmentTitles[2] = "⭐️⭐️⭐️"; ObjectID = "HhN-5O-Use"; */
+"HhN-5O-Use.segmentTitles[2]" = "⭐️⭐️⭐️";
+
+/* Class = "UISegmentedControl"; HhN-5O-Use.segmentTitles[3] = "⭐️⭐️⭐️⭐️"; ObjectID = "HhN-5O-Use"; */
+"HhN-5O-Use.segmentTitles[3]" = "⭐️⭐️⭐️⭐️";
+
+/* Class = "UINavigationItem"; title = "Шаг 1"; ObjectID = "I2C-rw-Gl5"; */
+"I2C-rw-Gl5.title" = "Шаг 1";
+
+/* Class = "UISegmentedControl"; I6g-CT-t2l.segmentTitles[0] = "⭐️"; ObjectID = "I6g-CT-t2l"; */
+"I6g-CT-t2l.segmentTitles[0]" = "⭐️";
+
+/* Class = "UISegmentedControl"; I6g-CT-t2l.segmentTitles[1] = "⭐️⭐️"; ObjectID = "I6g-CT-t2l"; */
+"I6g-CT-t2l.segmentTitles[1]" = "⭐️⭐️";
+
+/* Class = "UISegmentedControl"; I6g-CT-t2l.segmentTitles[2] = "⭐️⭐️⭐️"; ObjectID = "I6g-CT-t2l"; */
+"I6g-CT-t2l.segmentTitles[2]" = "⭐️⭐️⭐️";
+
+/* Class = "UISegmentedControl"; I6g-CT-t2l.segmentTitles[3] = "⭐️⭐️⭐️⭐️"; ObjectID = "I6g-CT-t2l"; */
+"I6g-CT-t2l.segmentTitles[3]" = "⭐️⭐️⭐️⭐️";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "LEL-sP-Xcr"; */
+"LEL-sP-Xcr.text" = "Title";
+
+/* Class = "UITableViewSection"; headerTitle = "Введите альтернативы"; ObjectID = "Mko-RL-JOQ"; */
+"Mko-RL-JOQ.headerTitle" = "Введите альтернативы";
+
+/* Class = "UIBarButtonItem"; title = "Далее"; ObjectID = "N5q-ep-raO"; */
+"N5q-ep-raO.title" = "Далее";
+
+/* Class = "UITextField"; placeholder = "Критерий 3"; ObjectID = "PCl-mh-N48"; */
+"PCl-mh-N48.placeholder" = "Критерий 3";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "RL7-XS-nGl"; */
+"RL7-XS-nGl.text" = "Detail";
+
+/* Class = "UIBarButtonItem"; title = "Назад"; ObjectID = "SPS-H7-evQ"; */
+"SPS-H7-evQ.title" = "Назад";
+
+/* Class = "UIButton"; normalTitle = "Пример использования"; ObjectID = "TLs-oU-uCi"; */
+"TLs-oU-uCi.normalTitle" = "Пример использования";
+
+/* Class = "UIButton"; normalTitle = "Восстановить покупку"; ObjectID = "VWD-Bf-rwB"; */
+"VWD-Bf-rwB.normalTitle" = "Восстановить покупку";
+
+/* Class = "UIBarButtonItem"; title = "Назад"; ObjectID = "Ybp-im-Bpr"; */
+"Ybp-im-Bpr.title" = "Назад";
+
+/* Class = "UITextField"; placeholder = "Критерий 5"; ObjectID = "Zdp-1A-2NJ"; */
+"Zdp-1A-2NJ.placeholder" = "Критерий 5";
+
+/* Class = "UITableViewSection"; headerTitle = "Введите критерии и их важность"; ObjectID = "bY3-gV-ry6"; */
+"bY3-gV-ry6.headerTitle" = "Введите критерии и их важность";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "bvv-nU-bgz"; */
+"bvv-nU-bgz.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Описание"; ObjectID = "ehq-wt-iwW"; */
+"ehq-wt-iwW.normalTitle" = "Описание";
+
+/* Class = "UITextField"; placeholder = "Альтернатива 1"; ObjectID = "fQ5-s7-XUC"; */
+"fQ5-s7-XUC.placeholder" = "Альтернатива 1";
+
+/* Class = "UITextField"; placeholder = "Альтернатива 3"; ObjectID = "ha1-pf-jFS"; */
+"ha1-pf-jFS.placeholder" = "Альтернатива 3";
+
+/* Class = "UIBarButtonItem"; title = "Завершить"; ObjectID = "iPR-Dn-WbT"; */
+"iPR-Dn-WbT.title" = "Завершить";
+
+/* Class = "UILabel"; text = "Copyright © 2018 Altunin. All rights reserved."; ObjectID = "jiL-c0-mIH"; */
+"jiL-c0-mIH.text" = "Copyright © 2018 Altunin. All rights reserved.";
+
+/* Class = "UISegmentedControl"; kH4-Gq-plj.segmentTitles[0] = "⭐️"; ObjectID = "kH4-Gq-plj"; */
+"kH4-Gq-plj.segmentTitles[0]" = "⭐️";
+
+/* Class = "UISegmentedControl"; kH4-Gq-plj.segmentTitles[1] = "⭐️⭐️"; ObjectID = "kH4-Gq-plj"; */
+"kH4-Gq-plj.segmentTitles[1]" = "⭐️⭐️";
+
+/* Class = "UISegmentedControl"; kH4-Gq-plj.segmentTitles[2] = "⭐️⭐️⭐️"; ObjectID = "kH4-Gq-plj"; */
+"kH4-Gq-plj.segmentTitles[2]" = "⭐️⭐️⭐️";
+
+/* Class = "UISegmentedControl"; kH4-Gq-plj.segmentTitles[3] = "⭐️⭐️⭐️⭐️"; ObjectID = "kH4-Gq-plj"; */
+"kH4-Gq-plj.segmentTitles[3]" = "⭐️⭐️⭐️⭐️";
+
+/* Class = "UISegmentedControl"; kno-GK-FOK.segmentTitles[0] = "⭐️"; ObjectID = "kno-GK-FOK"; */
+"kno-GK-FOK.segmentTitles[0]" = "⭐️";
+
+/* Class = "UISegmentedControl"; kno-GK-FOK.segmentTitles[1] = "⭐️⭐️"; ObjectID = "kno-GK-FOK"; */
+"kno-GK-FOK.segmentTitles[1]" = "⭐️⭐️";
+
+/* Class = "UISegmentedControl"; kno-GK-FOK.segmentTitles[2] = "⭐️⭐️⭐️"; ObjectID = "kno-GK-FOK"; */
+"kno-GK-FOK.segmentTitles[2]" = "⭐️⭐️⭐️";
+
+/* Class = "UISegmentedControl"; kno-GK-FOK.segmentTitles[3] = "⭐️⭐️⭐️⭐️"; ObjectID = "kno-GK-FOK"; */
+"kno-GK-FOK.segmentTitles[3]" = "⭐️⭐️⭐️⭐️";
+
+/* Class = "UITextField"; placeholder = "Критерий 1"; ObjectID = "lxV-QN-xaP"; */
+"lxV-QN-xaP.placeholder" = "Критерий 1";
+
+/* Class = "UIBarButtonItem"; title = "Назад"; ObjectID = "oBL-4Z-7bg"; */
+"oBL-4Z-7bg.title" = "Назад";
+
+/* Class = "UIBarButtonItem"; title = "Результат"; ObjectID = "qcl-LI-XJH"; */
+"qcl-LI-XJH.title" = "Результат";
+
+/* Class = "UIButton"; normalTitle = "Начать"; ObjectID = "t8u-wr-Vjw"; */
+"t8u-wr-Vjw.normalTitle" = "Начать";
+
+/* Class = "UINavigationItem"; title = "Результат"; ObjectID = "vtC-F7-84n"; */
+"vtC-F7-84n.title" = "Результат";
+
+/* Class = "UITextField"; placeholder = "Альтернатива 4"; ObjectID = "wqR-yl-naE"; */
+"wqR-yl-naE.placeholder" = "Альтернатива 4";
+
+/* Class = "UILabel"; text = "Помощник в принятии решения"; ObjectID = "yZm-D7-Mlu"; */
+"yZm-D7-Mlu.text" = "Помощник в принятии решения";

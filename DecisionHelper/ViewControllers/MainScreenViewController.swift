@@ -17,7 +17,7 @@ class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        versionLabel.text = "Версия: Lite 1.0.0"
+        versionLabel.text = NSLocalizedString("liteVersion", value: "Version: Lite 1.0.0", comment: "")
         
         IAPServise.shared.getProducts()
         
@@ -64,12 +64,12 @@ class MainScreenViewController: UIViewController {
         
         buyButton.isHidden = isPurchased
         restoreButton.isHidden = isPurchased
-        versionLabel.text = "Версия: 1.0"
+        versionLabel.text = NSLocalizedString("fullVersion", value: "Version: 1.0", comment: "")
         infoButton.isHidden = isPurchased
     }
     
     @IBAction func paidVersionAlert() {
-        let okAction = UIAlertAction(title: "Продолжить", style: .cancel) {
+        let okAction = UIAlertAction(title: NSLocalizedString("continueAlertButton", value: "Next", comment: ""), style: .cancel) {
             (action) in
             // Respond to user selection of the action.
         }
@@ -77,7 +77,7 @@ class MainScreenViewController: UIViewController {
         // Create and configure the alert controller.
         let alert = UIAlertController(
             title: "",
-            message: "Lite версия позволяет ввести максимум 3 критерия и 3 альтернативы, что является достаточным количеством для большинства повседневных задач.\n\nЕсли вы хотите увеличить число критериев и альтернатив до 5 или вам просто нравится идея приложения и вы хотите поддержать разработчика, то купите полную версию.\nВсе последующие обновления будут выходить для полной версии.",
+            message: NSLocalizedString("paidVersionAlertDesc", value: "translation", comment: ""),
             preferredStyle: .alert
         )
         alert.addAction(okAction)
@@ -88,12 +88,12 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func descriptionAlert() {
-        let closeAction = UIAlertAction(title: "Закрыть", style: .default) {
+        let closeAction = UIAlertAction(title: NSLocalizedString("closeAlertButton", value: "Close", comment: ""), style: .default) {
             (action) in
         }
         
-        let title = "Описание"
-        let message = "Приложение помогает решить проблему выбора между несколькими альтернативами. Это не очередная рулетка или подбрасывание монеты, где выбор основывается на генерации случайного значения. Основная особенность заключается в том, что приложение предоставляет количественную оценку, основываясь именно на ваших предпочтениях и субъективном мнении.\nДля вычисления лучшего результата в программу заложен математический алгоритм из “Теории принятия решений”, который называется “Метод анализа иерархий”. (https://ru.wikipedia.org/wiki/Метод_анализа_иерархий)\nДля быстрого знакомства с программой рекомендуется запустить пример."
+        let title = NSLocalizedString("descriptionTitleAlert", value: "Description", comment: "")
+        let message = NSLocalizedString("descriptionAlert", value: "translation", comment: "")
         
         let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
         
