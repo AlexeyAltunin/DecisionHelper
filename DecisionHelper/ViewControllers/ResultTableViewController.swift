@@ -77,7 +77,11 @@ class ResultTableViewController: UITableViewController {
         }
         
         let title = NSLocalizedString("resultAlertTitle", value: "Result", comment: "")
-        let message = NSLocalizedString("resultAlert", value: "translation", comment: "")
+        let message = NSLocalizedString(
+            "resultAlert",
+            value: "The algorithm calculates the total number of points based on the data entered, the alternative with the highest score is the best. In this case the difference between Germany and Switzerland is not very big but it is better for you to go to Germany. The calculations were made in accordance with your needs, the conditions of the task and upon your opinion.",
+            comment: ""
+        )
         
         let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
         

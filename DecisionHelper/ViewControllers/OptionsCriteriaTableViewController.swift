@@ -237,7 +237,11 @@ class OptionsCriteriaTableViewController: UITableViewController, UITextFieldDele
         }
         
         let title = NSLocalizedString("step1AlertTitle", value: "Step 1", comment: "")
-        let message = NSLocalizedString("step1Alert", value: "translation", comment: "")
+        let message = NSLocalizedString(
+            "step1Alert",
+            value: "Objective: We choose a country for a one-person trip of 3 weeks' duration. The choice was made by two alternatives: 'Germany' or 'Switzerland'. To select the best country we need to indicate the important criteria for us to choose. For example: 'Nature', 'Cost of living' and 'Ticket prices'. Next, we will place the importance under each criterion:\n'1. Nature' = ⭐️⭐️⭐️, this is a rather important indicator for us but not the highest priority.\n'2. Cost of living' = ⭐️⭐️⭐️⭐️, since we are going on a trip for 3 weeks, then the cost of living will be one of the decisive factors\n'3. tickets cost' = ⭐️⭐️, does not depend on the number of days of residence, only one person is flying, so this criterion is less important for us.",
+            comment: ""
+        )
         
         let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
         

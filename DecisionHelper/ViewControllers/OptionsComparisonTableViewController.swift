@@ -119,7 +119,11 @@ class OptionsComparisonTableViewController: UITableViewController {
         }
         
         let title = NSLocalizedString("step2AlertTitle", value: "Step 2", comment: "")
-        let message = NSLocalizedString("step2Alert", value: "translation", comment: "")
+        let message = NSLocalizedString(
+            "step2Alert",
+            value: "Before the final count you need to place alternatives for each criterion based on your subjective opinion and knowledge. For example, we think that nature is better in Switzerland and move it to the first place, Germany will drop to the 2nd place. However, according to the cost of living, Germany will take the first place because it is much cheaper to live there.\nThe higher the country's place the more points this criterion will receive at the final count.",
+            comment: ""
+        )
         
         let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
         

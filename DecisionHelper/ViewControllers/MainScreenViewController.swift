@@ -17,7 +17,7 @@ class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        versionLabel.text = NSLocalizedString("liteVersion", value: "Version: Lite 1.0.0", comment: "")
+        versionLabel.text = NSLocalizedString("liteVersion", value: "Version: Lite 1.1", comment: "")
         
         IAPServise.shared.getProducts()
         
@@ -64,7 +64,7 @@ class MainScreenViewController: UIViewController {
         
         buyButton.isHidden = isPurchased
         restoreButton.isHidden = isPurchased
-        versionLabel.text = NSLocalizedString("fullVersion", value: "Version: 1.0", comment: "")
+        versionLabel.text = NSLocalizedString("fullVersion", value: "Version: 1.1", comment: "")
         infoButton.isHidden = isPurchased
     }
     
@@ -77,7 +77,11 @@ class MainScreenViewController: UIViewController {
         // Create and configure the alert controller.
         let alert = UIAlertController(
             title: "",
-            message: NSLocalizedString("paidVersionAlertDesc", value: "translation", comment: ""),
+            message: NSLocalizedString(
+                "paidVersionAlertDesc",
+                value: "The Lite version allows you to enter a maximum of 3 criteria and 3 alternatives which is enough for most everyday tasks.\n\nIf you want to increase the number of criteria and alternatives to 5 or you just like the idea of the application and you want to support the developer then buy the full version.\nAll subsequent updates will be released for the full version only.",
+                comment: ""
+            ),
             preferredStyle: .alert
         )
         alert.addAction(okAction)
@@ -93,7 +97,11 @@ class MainScreenViewController: UIViewController {
         }
         
         let title = NSLocalizedString("descriptionTitleAlert", value: "Description", comment: "")
-        let message = NSLocalizedString("descriptionAlert", value: "translation", comment: "")
+        let message = NSLocalizedString(
+            "descriptionAlert",
+            value: "The application helps to solve the problem of choosing between several alternatives. This is not just a coin toss where the choice is based on the generation of a random value. The main feature is that the application provides a quantitative estimate based on your preferences and subjective opinion.\nFor calculating the best result the program contains a mathematical algorithm from the 'Theory of Decision Making' which is called the 'Hierarchy Analysis Method'. (https://en.wikipedia.org/wiki/Analytic_hierarchy_process)\nFor a quick introduction to the program is recommended to run the example.",
+            comment: ""
+        )
         
         let mutableData = Alert.getFormatedActionSheetGenerator(title: title, message: message)
         
