@@ -6,8 +6,8 @@
   Copyright © 2018 ALEXEY ALTUNIN. All rights reserved.
 */
 
-"liteVersion" = "Версия: Lite 1.0.0";
-"fullVersion" = "Версия: 1.0";
+"liteVersion" = "Версия: Lite 1.1";
+"fullVersion" = "Версия: 1.1";
 "continueAlertButton" = "Продолжить";
 "closeAlertButton" = "Закрыть";
 
